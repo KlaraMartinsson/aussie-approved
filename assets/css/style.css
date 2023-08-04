@@ -22,7 +22,9 @@ h1 {
     font-family: 'Lisu Bosa', serif;
 }
 
-h2 {}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 p {
     font-size: 24px;
@@ -65,19 +67,22 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 500px;
     background: #FFFF;
     border-radius: 10px;
     padding: 12px;
     border:1px solid #B90C0C;
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* Rules heading styling*/
 .rules-box h2 {
-    font-size: 50px;
+    font-size: 48px;
     color: #B90C0C;
     font-family: 'arial';
+    
 }
 
 /* Positioning of the rules list*/
@@ -98,7 +103,7 @@ p {
 }
 
 .btn-group .buttons {
-    width: 70px;
+    width: 100px;
     height: 30px;
     border-radius: 3px;
     letter-spacing: 1px;
@@ -109,3 +114,9 @@ p {
     border: 2px solid #3066D2;
 }
 
+.rules-box.active {
+z-index: 5;
+opacity: 1;
+pointer-events: auto;
+transform: translate(-50%, -50%) scale(1);
+}
