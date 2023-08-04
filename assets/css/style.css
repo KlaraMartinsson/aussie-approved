@@ -1,3 +1,4 @@
+/* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lisu+Bosa:wght@200&display=swap');
 
 * {
@@ -5,7 +6,7 @@
     padding: 0;
     border: none;
 }
-
+/* Content for the home page */
 .home-content {
     display: flex;
     justify-content: center;
@@ -37,7 +38,7 @@ h2 {
     position: absolute;
     bottom: 0;
 }
-
+/* button to start the quiz*/
 #start-btn {
     width: 190px;
     height: 40px;
