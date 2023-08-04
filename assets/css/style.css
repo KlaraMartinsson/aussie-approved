@@ -60,6 +60,7 @@ p {
     color: white;
 }
 
+/* Rules section styling and positioning*/
 .rules-box {
     position: absolute;
     top: 50%;
@@ -71,13 +72,31 @@ p {
     padding: 12px;
 }
 
+/* Rules heading styling*/
 .rules-box h2 {
 font-size: 53px;
 color:#609EFD
 }
 
+/* Positioning of the rules list*/
 .rules {
    display: inline-block;
    font-size: 18px; 
    margin: 6px;
 }
+/* Rules box buttons positioning and styling*/
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-group .buttons {
+background-color: #609EFD;
+width: 70px;
+height: 30px;
+border-radius: 3px;
+color: white;
+letter-spacing: 1px;
+}
+
