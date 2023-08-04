@@ -6,6 +6,7 @@
     padding: 0;
     border: none;
 }
+
 /* Content for the home page */
 .home-content {
     display: flex;
@@ -21,9 +22,7 @@ h1 {
     font-family: 'Lisu Bosa', serif;
 }
 
-h2 {
-
-}
+h2 {}
 
 p {
     font-size: 24px;
@@ -42,6 +41,7 @@ p {
     position: absolute;
     bottom: 0;
 }
+
 /* button to start the quiz*/
 #start-btn {
     width: 190px;
@@ -67,36 +67,45 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: navy;
+    background: #FFFF;
     border-radius: 10px;
     padding: 12px;
+    border:1px solid #B90C0C;
 }
 
 /* Rules heading styling*/
 .rules-box h2 {
-font-size: 53px;
-color:#609EFD
+    font-size: 50px;
+    color: #B90C0C;
+    font-family: 'arial';
 }
 
 /* Positioning of the rules list*/
 .rules {
-   display: inline-block;
-   font-size: 18px; 
-   margin: 6px;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px;
 }
+
 /* Rules box buttons positioning and styling*/
 .btn-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid #3066D2;
+    margin-top: 10px;
+    padding: 11px 0 5px;
 }
 
 .btn-group .buttons {
-background-color: #609EFD;
-width: 70px;
-height: 30px;
-border-radius: 3px;
-color: white;
-letter-spacing: 1px;
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    border: 1px solid #B90C0C;
+}
+
+.buttons:hover {
+    border: 2px solid #3066D2;
 }
 
