@@ -22,6 +22,10 @@ h1 {
 }
 
 h2 {
+
+}
+
+p {
     font-size: 24px;
     padding: 10px 0 0 0;
     font-family: 'Lisu Bosa', serif;
@@ -56,3 +60,24 @@ h2 {
     color: white;
 }
 
+.rules-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: navy;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.rules-box h2 {
+font-size: 53px;
+color:#609EFD
+}
+
+.rules {
+   display: inline-block;
+   font-size: 18px; 
+   margin: 6px;
+}
