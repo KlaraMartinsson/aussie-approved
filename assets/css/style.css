@@ -64,17 +64,13 @@ p {
 
 /* Rules section styling and positioning*/
 .rules-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
+    margin: 0 auto;
     width: 500px;
     background: #FFFF;
     border-radius: 10px;
     padding: 12px;
-    border:1px solid #B90C0C;
-    opacity: 0;
-    pointer-events: none;
+    border: 1px solid #B90C0C;
+    margin-top: 150px;
 }
 
 /* Rules heading styling*/
@@ -82,7 +78,6 @@ p {
     font-size: 48px;
     color: #B90C0C;
     font-family: 'arial';
-    
 }
 
 /* Positioning of the rules list*/
@@ -112,11 +107,4 @@ p {
 
 .buttons:hover {
     border: 2px solid #3066D2;
-}
-
-.rules-box.active {
-z-index: 5;
-opacity: 1;
-pointer-events: auto;
-transform: translate(-50%, -50%) scale(1);
 }
