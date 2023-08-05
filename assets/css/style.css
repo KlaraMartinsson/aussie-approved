@@ -144,7 +144,7 @@ header{
     padding: 15px 0;
 }
 
-.btn-answer{
+.answer-btn{
     background: #FFFF;
     width: 100%;
     border: 3px solid #B90C0C;
@@ -158,8 +158,22 @@ header{
     transition: all 0.3s;
 }
 
-.btn-answer:hover {
+.answer-btn:hover {
     background-color: #003fbe;
     color: #FFFF;
     border: solid 3px #000000;
+}
+
+#next-btn{
+    background: rgb(247, 243, 254);
+    color: black;
+    border: 1px solid #B90C0C;
+    box-shadow: 0 0 4px #B90C0C;
+    width: 90px;
+    border-radius: 7px;
+    padding: 8px;
+    margin: 5px auto 0;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
 }
