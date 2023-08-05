@@ -15,11 +15,11 @@
     flex-direction: column;
 }
 
-.home-title{
+.home-title {
     font-size: 70px;
-        padding: 90px 0 0 0;
-        color: #609EFD;
-        font-family: 'Lisu Bosa', serif;
+    padding: 90px 0 0 0;
+    color: #609EFD;
+    font-family: 'Lisu Bosa', serif;
 }
 
 p {
@@ -68,10 +68,11 @@ p {
     border: 1px solid #B90C0C;
     box-shadow: 0 0 15px #B90C0C;
     margin-top: 150px;
+    display: none;
 }
 
 /* Rules heading styling*/
-.rules-box h2 {
+.rules-box h1 {
     font-size: 48px;
     color: #B90C0C;
     font-family: 'arial';
@@ -107,3 +108,30 @@ p {
 }
 
 /* Content for the Quiz box*/
+
+.quiz-game {
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    background: #FFFF;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #B90C0C;
+    box-shadow: 0 0 15px #B90C0C;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #000000 font-family: 'arial';
+}
+
+h3 {
+    font-size: 25px;
+    color: #B90C0C;
+    font-family: 'arial';
+}
+
+header{
+    border-bottom: 1px solid #3066D2;
+}
