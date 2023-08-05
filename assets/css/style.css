@@ -145,7 +145,7 @@ header{
 }
 
 .btn-answer{
-    background: white;
+    background: #FFFF;
     width: 100%;
     border: 3px solid #B90C0C;
     border-block-color:#3066D2;
@@ -155,4 +155,11 @@ header{
     margin: 10px 0;
     text-align: left;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-answer:hover {
+    background-color: #003fbe;
+    color: #FFFF;
+    border: solid 3px #000000;
 }
