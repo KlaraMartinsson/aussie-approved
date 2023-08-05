@@ -51,6 +51,7 @@ p {
     box-shadow: 0 0 7px #609EFD;
     font-weight: bold;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 #start-btn:hover {
@@ -101,6 +102,7 @@ p {
     border-radius: 3px;
     letter-spacing: 1px;
     border: 1px solid #B90C0C;
+    cursor: pointer;
 }
 
 .buttons:hover {
@@ -111,7 +113,7 @@ p {
 
 .quiz-game {
     margin: 0 auto;
-    width: 500px;
+    width: 700px;
     height: 400px;
     background: #FFFF;
     border-radius: 10px;
@@ -123,15 +125,34 @@ p {
 
 h2 {
     font-size: 30px;
-    color: #000000 font-family: 'arial';
+    color: #000000;
+    font-family: 'arial';
 }
 
 h3 {
     font-size: 25px;
     color: #B90C0C;
     font-family: 'arial';
+    text-align: center;
 }
 
 header{
     border-bottom: 1px solid #3066D2;
+}
+
+.quiz{
+    padding: 15px 0;
+}
+
+.btn-answer{
+    background: white;
+    width: 100%;
+    border: 3px solid #B90C0C;
+    border-block-color:#3066D2;
+    writing-mode: horizontal-tb;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
 }
