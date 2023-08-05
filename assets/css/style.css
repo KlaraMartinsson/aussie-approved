@@ -15,15 +15,11 @@
     flex-direction: column;
 }
 
-h1 {
+.home-title{
     font-size: 70px;
-    padding: 90px 0 0 0;
-    color: #609EFD;
-    font-family: 'Lisu Bosa', serif;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
+        padding: 90px 0 0 0;
+        color: #609EFD;
+        font-family: 'Lisu Bosa', serif;
 }
 
 p {
@@ -62,7 +58,7 @@ p {
     color: white;
 }
 
-/* Rules section styling and positioning*/
+/* Content for the rule box*/
 .rules-box {
     margin: 0 auto;
     width: 500px;
@@ -70,6 +66,7 @@ p {
     border-radius: 10px;
     padding: 12px;
     border: 1px solid #B90C0C;
+    box-shadow: 0 0 15px #B90C0C;
     margin-top: 150px;
 }
 
@@ -108,3 +105,5 @@ p {
 .buttons:hover {
     border: 2px solid #3066D2;
 }
+
+/* Content for the Quiz box*/
