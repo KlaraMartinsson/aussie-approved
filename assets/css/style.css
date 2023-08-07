@@ -164,6 +164,18 @@ header{
     border: solid 3px #000000;
 }
 
+.answer-btn.correct{
+    background: rgb(72, 176, 72);
+    border: 2px solid black;
+    color: black;
+}
+
+.answer-btn.incorrect {
+    background: rgb(252, 94, 94);
+    border: 2px solid black;
+    color: black;
+}
+
 #next-btn{
     color: black;
     border: 1px solid #B90C0C;

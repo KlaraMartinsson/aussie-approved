@@ -13,7 +13,7 @@ const nextBtn = document.getElementById('next-btn')
 //Gives random questions in the quiz
 let randomQuestions, currentQuestionIndex
 
-// Hiding the rule box and showing question box, while clicking on continue button
+// Hiding the rule box and showing question box, when clicking on continue button
 function startQuiz() {
     rulesBox.classList.add('hide')
     randomQuestions = questions.sort(()=> Math.random() - .5) //Randomise questions
@@ -52,7 +52,25 @@ nextBtn.classList.add('hide')
 }
 
 function selectAnswer(e) {
+const selectedButton = e.target
+const correct = selectedButton.dataset.correct
+Array.from(optionList.children).forEach(button =>{
+    setStatusClass(button, button.dataset.correct)
+})
+}
 
+function setStatusClass(element, correct){
+clearStatusClass(element)
+if (correct) {
+    element.classList.add('correct')
+} else{
+    element.classList.add('incorrect')
+}
+}
+
+function clearStatusClass(element){
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
 }
 
 // Making arrays with all the questions
