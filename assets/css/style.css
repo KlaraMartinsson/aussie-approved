@@ -142,7 +142,7 @@ header{
 .quiz{
     padding: 15px 0;
 }
-
+/* Answers for the questions*/
 .answer-btn{
     background: #FFFF;
     width: 100%;
@@ -175,7 +175,7 @@ header{
     border: 2px solid black;
     color: black;
 }
-
+/*Next button*/
 #next-btn{
     color: black;
     border: 1px solid #B90C0C;
@@ -188,7 +188,7 @@ header{
     font-size: 17px;
     cursor: pointer;
 }
-
+/* Hides content when needed*/
 .hide {
     display: none;
 }

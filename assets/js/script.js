@@ -1,76 +1,88 @@
 //Getting all necessary elements
 
-const continueBtn = document.getElementById('continue-btn')
-const rulesBox = document.getElementById('rules-box')
-continueBtn.addEventListener('click', startQuiz)
-const quizBox = document.getElementsByClassName('quiz-box')[0]
+const continueBtn = document.getElementById('continue-btn');
+const rulesBox = document.getElementById('rules-box');
+continueBtn.addEventListener('click', startQuiz);
+const quizBox = document.getElementsByClassName('quiz-box')[0];
 
-const questionTitle = document.getElementById('question-title')
-const optionList = document.getElementById('answer-buttons')
+const questionTitle = document.getElementById('question-title');
+const optionList = document.getElementById('answer-buttons');
 
-const nextBtn = document.getElementById('next-btn')
+const nextBtn = document.getElementById('next-btn');
 
 //Gives random questions in the quiz
-let randomQuestions, currentQuestionIndex
+let randomQuestions, currentQuestionIndex;
+
+//Gives new questions when the next button is clicked
+nextBtn.addEventListener('click', () => {
+    currentQuestionIndex++;
+    giveNextQuestion();
+});
 
 // Hiding the rule box and showing question box, when clicking on continue button
 function startQuiz() {
-    rulesBox.classList.add('hide')
-    randomQuestions = questions.sort(()=> Math.random() - .5) //Randomise questions
-    currentQuestionIndex = 0
-    quizBox.classList.remove('hide')
-    giveNextQuestion()
+    rulesBox.classList.add('hide');
+    randomQuestions = questions.sort(() => Math.random() - .5); //Randomise questions
+    currentQuestionIndex = 0;
+    quizBox.classList.remove('hide');
+    giveNextQuestion();
 }
 
 //Gives random questions in the quiz
 function giveNextQuestion() {
-    resetQuestions()
-    showQuestion(randomQuestions[currentQuestionIndex])
+    resetQuestions();
+    showQuestion(randomQuestions[currentQuestionIndex]);
 }
 
 //Shows the questions in the game
 function showQuestion(question) {
-    questionTitle.innerText = question.question
+    questionTitle.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('answer-btn')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('answer-btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
-        optionList.appendChild(button)
-    })
+        button.addEventListener('click', selectAnswer);
+        optionList.appendChild(button);
+    });
 }
 
+//Change color when an answer is clicked
 function resetQuestions() {
-nextBtn.classList.add('hide')
+    nextBtn.classList.add('hide');
     while (optionList.firstChild) {
         optionList.removeChild
-        (optionList.firstChild)
+            (optionList.firstChild);
     }
 }
 
 function selectAnswer(e) {
-const selectedButton = e.target
-const correct = selectedButton.dataset.correct
-Array.from(optionList.children).forEach(button =>{
-    setStatusClass(button, button.dataset.correct)
-})
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    Array.from(optionList.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
+        nextBtn.classList.remove('hide');
+    } else {
+        //Come back and put in result
+    }
 }
 
-function setStatusClass(element, correct){
-clearStatusClass(element)
-if (correct) {
-    element.classList.add('correct')
-} else{
-    element.classList.add('incorrect')
-}
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
+    }
 }
 
-function clearStatusClass(element){
-    element.classList.remove('correct')
-    element.classList.remove('incorrect')
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
 }
 
 // Making arrays with all the questions
