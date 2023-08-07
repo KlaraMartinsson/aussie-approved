@@ -46,3 +46,17 @@ const questions = [
         ]
     },
 ];
+
+//Getting all necessary elements
+
+const continueBtn = document.getElementById('continue-btn')
+const rulesBox = document.getElementById('rules-box')
+continueBtn.addEventListener('click', startQuiz)
+const quizGame = document.getElementsByClassName('quiz-game')[0]
+
+
+function startQuiz() {
+    console.log('Started')
+    rulesBox.classList.add('hide')
+    quizGame.classList.remove('hide')
+};
