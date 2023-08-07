@@ -8,12 +8,13 @@ const quizBox = document.getElementsByClassName('quiz-box')[0]
 const questionTitle = document.getElementById('question-title')
 const optionList = document.getElementById('answer-buttons')
 
+const nextBtn = document.getElementById('next-btn')
+
 //Gives random questions in the quiz
 let randomQuestions, currentQuestionIndex
 
 // Hiding the rule box and showing question box, while clicking on continue button
 function startQuiz() {
-    console.log('Started')
     rulesBox.classList.add('hide')
     randomQuestions = questions.sort(()=> Math.random() - .5) //Randomise questions
     currentQuestionIndex = 0
@@ -21,10 +22,13 @@ function startQuiz() {
     giveNextQuestion()
 }
 
+//Gives random questions in the quiz
 function giveNextQuestion() {
+    resetQuestions()
     showQuestion(randomQuestions[currentQuestionIndex])
 }
 
+//Shows the questions in the game
 function showQuestion(question) {
     questionTitle.innerText = question.question
     question.answers.forEach(answer => {
@@ -37,6 +41,14 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer)
         optionList.appendChild(button)
     })
+}
+
+function resetQuestions() {
+nextBtn.classList.add('hide')
+    while (optionList.firstChild) {
+        optionList.removeChild
+        (optionList.firstChild)
+    }
 }
 
 function selectAnswer(e) {
