@@ -1,7 +1,7 @@
 // Making arrays with all the questions
 const questions = [
     {
-        question: "In Australian slang, what do they mean by: she'll be right",
+        question: "In Australian slang, what do they mean by: she'll be right?",
         options: [
             { text: "She is correct", correct: false },
             { text: "She is feeling fine", correct: true },
@@ -10,7 +10,7 @@ const questions = [
         ]
     },
     {
-        question: "In Australian slang, what do they mean by: A cold one",
+        question: "In Australian slang, what do they mean by: A cold one?",
         options: [
             { text: "A person who is not nice", correct: false },
             { text: "The weather is cold", correct: false },
@@ -19,7 +19,7 @@ const questions = [
         ]
     },
     {
-        question: "In Australian slang, what do they mean by: mate's rates",
+        question: "In Australian slang, what do they mean by: mate's rates?",
         options: [
             { text: "A discount from a friend", correct: true },
             { text: "A rating scale of who you like the most of your friends", correct: false },
@@ -37,7 +37,7 @@ const questions = [
         ]
     },
     {
-        question: "In Australian slang, what do they mean by: have a crack",
+        question: "In Australian slang, what do they mean by: have a crack?",
         options: [
             { text: "Try to attempt something", correct: true },
             { text: "Get a paper's cut", correct: false },
@@ -52,11 +52,28 @@ const questions = [
 const continueBtn = document.getElementById('continue-btn')
 const rulesBox = document.getElementById('rules-box')
 continueBtn.addEventListener('click', startQuiz)
-const quizGame = document.getElementsByClassName('quiz-game')[0]
+const quizBox = document.getElementsByClassName('quiz-box')[0]
 
+const questionTitle = document.getElementById('question-title')
+const options = document.getElementById('answer-buttons')
 
+//Gives random questions in the quiz
+let randomQuestions, currentQuestionIndex
+
+// Hiding the rule box and showing question box, while clicking on continue button
 function startQuiz() {
     console.log('Started')
     rulesBox.classList.add('hide')
-    quizGame.classList.remove('hide')
+    randomQuestions = questions.sort(()=> Math.random() - .5) //Randomise questions
+    currentQuestionIndex = 0
+    quizBox.classList.remove('hide')
+    giveNextQuestion()
+};
+
+function giveNextQuestion() {
+    showQuestion(randomQuestions[currentQuestionIndex])
+};
+
+function showQuestion(question) {
+    questionTitle.innerText = question.question
 };
