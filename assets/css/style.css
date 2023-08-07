@@ -69,7 +69,6 @@ p {
     border: 1px solid #B90C0C;
     box-shadow: 0 0 15px #B90C0C;
     margin-top: 150px;
-    display: none;
 }
 
 /* Rules heading styling*/
@@ -165,7 +164,6 @@ header{
 }
 
 #next-btn{
-    background: rgb(247, 243, 254);
     color: black;
     border: 1px solid #B90C0C;
     box-shadow: 0 0 4px #B90C0C;

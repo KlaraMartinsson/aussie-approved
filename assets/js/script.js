@@ -46,36 +46,3 @@ const questions = [
         ]
     },
 ];
-
-// Getting all required elements
-
-const questionTitle = getElementbyId("question-title");
-const answerButtons = getElementbyId("answer-buttons");
-const nextBtn = getElementbyId("next-btn");
-
-// Code to display the questions
-
-let currentQuestionI = 0;
-let score = 0;
-
-function Startgame(){
-    currentQuestionI = 0;
-    score = 0;
-    nextBtn.innerHTML ="Next"
-    questionAppear()
-}
-
-function questionAppear(){
-    let currentQuestion = questions[currentQuestionI]
-    let question = currentQuestion +1;
-    questionTitle.innerHTML = question + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach(answer => {
-        const btn = document.createElement("button");
-        btn.innerHTML = answer.text
-        btn.classList.add("btn");
-        answerButtons.appendChild(button);
-    })
-}
-
-Startgame();
