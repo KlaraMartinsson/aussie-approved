@@ -8,6 +8,9 @@ const quizBox = document.getElementsByClassName('quiz-box')[0]
 const questionTitle = document.getElementById('question-title')
 const optionList = document.getElementById('answer-buttons')
 
+//Gives random questions in the quiz
+let randomQuestions, currentQuestionIndex
+
 // Hiding the rule box and showing question box, while clicking on continue button
 function startQuiz() {
     console.log('Started')
@@ -16,17 +19,15 @@ function startQuiz() {
     currentQuestionIndex = 0
     quizBox.classList.remove('hide')
     giveNextQuestion()
-};
+}
 
-//Gives random questions in the quiz
-let randomQuestions, currentQuestionIndex;
 function giveNextQuestion() {
     showQuestion(randomQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
     questionTitle.innerText = question.question
-    questions.answers.forEach(answer => {
+    question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('answer-btn')
@@ -38,7 +39,7 @@ function showQuestion(question) {
     })
 }
 
-function selectAnswer(event) {
+function selectAnswer(e) {
 
 }
 
