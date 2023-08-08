@@ -137,10 +137,26 @@ h3 {
 
 header{
     border-bottom: 1px solid #3066D2;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
 }
 
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    background: #003fbe;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 8px;
+}
+
+
 .quiz{
-    padding: 15px 0;
+    padding: 18px 0;
 }
 /* Answers for the questions*/
 .answer-btn{

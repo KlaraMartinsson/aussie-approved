@@ -102,7 +102,7 @@ function clearStatusClass(element) {
 //Checks the question counter in the footer of the quiz
 function showQuestionCounter(index) {
     const questionCounter = document.getElementsByClassName('counter')[0];
-    let counter = '<span><p>' + index + '</p>Of<p>' + questions.length + '</p>Questions</span>';
+    let counter = '<span><p>' + index + '</p>/<p>' + questions.length + '</p>Questions</span>';
     questionCounter.innerHTML = counter;
 }
 
