@@ -11,25 +11,28 @@ const optionList = document.getElementById('answer-buttons');
 
 const nextBtn = document.getElementById('next-btn');
 
-let scoreCounters = 0;
-let scoreNum = 1;
+//Counts the questions in the quiz
+let questionCounters = 0;
+let questionNum = 1;
+
 //Starts quiz when continue button is clicked
 continueBtn.addEventListener('click', startQuiz);
-//Start counting scores when contiue button is clicked
+
+//Start counting questions when contiue button is clicked
 continueBtn.addEventListener('click', () => {
-    showScore(1);
+    showQuestionCounter(1);
 });
 
 //Gives random questions in the quiz
 let randomQuestions, currentQuestionIndex;
 
-//Gives new questions when the next button is clicked
+//Gives new questions when the next button is clicked and counts every question
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
-    scoreCounters++;
-    scoreNum++;
+    questionCounters++; 
+    questionNum++;
     giveRandomQuestion();
-    showScore(scoreNum);
+    showQuestionCounter(questionNum);
 });
 
 // Hiding the rule box and showing question box, when clicking on continue button
@@ -94,11 +97,11 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 }
 
-//Checks the scores
-function showScore(index) {
-    const scoreCounter = document.getElementsByClassName('scores')[0];
-    let scores = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>questions</span>';
-    scoreCounter.innerHTML = scores;
+//Checks the question counter in the footer of the quiz
+function showQuestionCounter(index) {
+    const questionCounter = document.getElementsByClassName('counter')[0];
+    let counter = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>questions</span>';
+    questionCounter.innerHTML = counter;
 }
 
 /*
