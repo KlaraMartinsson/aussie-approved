@@ -2,6 +2,7 @@
 
 const continueBtn = document.getElementById('continue-btn');
 const exitBtn = document.getElementById('exit-btn');
+const nextBtn = document.getElementById('next-btn');
 const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
@@ -9,7 +10,7 @@ const feedbackBox = document.getElementsByClassName('feedback-box')[0];
 const questionTitle = document.getElementById('question-title');
 const optionList = document.getElementById('answer-buttons');
 
-const nextBtn = document.getElementById('next-btn');
+const counterQuestions = document.getElementsByClassName('counter')[0];
 
 //Counts the questions in the quiz
 let questionCounters = 0;
@@ -41,6 +42,7 @@ function startQuiz() {
     randomQuestions = questions.sort(() => Math.random() - .5); //Randomise questions
     currentQuestionIndex = 0;
     quizBox.classList.remove('hide');
+    counterQuestions.classList.remove('hide');
     giveRandomQuestion();
 }
 
