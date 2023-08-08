@@ -6,6 +6,7 @@ const nextBtn = document.getElementById('next-btn');
 const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
+const timeCount = quizBox.querySelector('.timer .timer-sec');
 
 const questionTitle = document.getElementById('question-title');
 const optionList = document.getElementById('answer-buttons');
@@ -15,13 +16,15 @@ const counterQuestions = document.getElementsByClassName('counter')[0];
 //Counts the questions in the quiz
 let questionCounters = 0;
 let questionNum = 1;
-
+let timeCounter;
+let timeValue = 15;
 //Starts quiz when continue button is clicked
 continueBtn.addEventListener('click', startQuiz);
 
 //Start counting questions when contiue button is clicked
 continueBtn.addEventListener('click', () => {
     showQuestionCounter(1);
+    Starttimer(15);
 });
 
 //Gives random questions in the quiz
@@ -34,6 +37,8 @@ nextBtn.addEventListener('click', () => {
     questionNum++;
     giveRandomQuestion();
     showQuestionCounter(questionNum);
+    clearInterval(counter);
+    Starttimer(timeValue);
 });
 
 // Hiding the rule box and showing question box, when clicking on continue button
@@ -104,6 +109,14 @@ function showQuestionCounter(index) {
     const questionCounter = document.getElementsByClassName('counter')[0];
     let counter = '<span><p>' + index + '</p>/<p>' + questions.length + '</p>Questions</span>';
     questionCounter.innerHTML = counter;
+}
+
+function Starttimer(time){
+    timeCounter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent = time;
+        time--;
+    }
 }
 
 /*

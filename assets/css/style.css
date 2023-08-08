@@ -141,7 +141,7 @@ header{
     justify-content: space-between;
     height: 60px;
 }
-
+/* Style and positioning for the timer in Quiz*/
 .timer{
     display: flex;
     align-items: center;
@@ -222,7 +222,7 @@ header{
     font-size: 17px;
     cursor: pointer;
 }
-
+/*Positioning of the countdown for the questions*/
 .counter span {
 display: flex;
 text-align: left;
