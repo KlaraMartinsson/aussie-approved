@@ -1,6 +1,7 @@
 //Getting all necessary elements
 
 const continueBtn = document.getElementById('continue-btn');
+const exitBtn = document.getElementById('exit-btn');
 const rulesBox = document.getElementById('rules-box');
 continueBtn.addEventListener('click', startQuiz);
 const quizBox = document.getElementsByClassName('quiz-box')[0];
@@ -17,7 +18,7 @@ let randomQuestions, currentQuestionIndex;
 //Gives new questions when the next button is clicked
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
-    giveNextQuestion();
+    giveRandomQuestion();
 });
 
 // Hiding the rule box and showing question box, when clicking on continue button
@@ -26,11 +27,11 @@ function startQuiz() {
     randomQuestions = questions.sort(() => Math.random() - .5); //Randomise questions
     currentQuestionIndex = 0;
     quizBox.classList.remove('hide');
-    giveNextQuestion();
+    giveRandomQuestion();
 }
 
 //Gives random questions in the quiz
-function giveNextQuestion() {
+function giveRandomQuestion() {
     resetQuestions();
     showQuestion(randomQuestions[currentQuestionIndex]);
 }
@@ -64,8 +65,8 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct;
     Array.from(optionList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
-nextBtn.classList.remove('hide')
+    });
+    nextBtn.classList.remove('hide');
 }
 
 function setStatusClass(element, correct) {
@@ -82,34 +83,28 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 }
 
-if (allQuestionsAnswered()){
-showFeedback()
-} else {
-    displayNextQuestion();
+/*
+function setNextBtn() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showFeedback();
+    }
 }
 
-function allQuestionsAnswered(){
-    for (let i= 0<questions.lenght;i++){
-        if (!questions[i].isAnswered()){
-            return false;
-        }
-    }
-    return true;
-}
-/*
-if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
-    quizBox.classList.add('hide');
-    showFeedback();
-} else {
-    showFeedback(); //Come back and put in result
+nextBtn.addEventListener('click', () => {
+    if (currentQuestionIndex < questions.length) {
+        setNextBtn();
+    });
+
+function showFeedback() {
+    resetState();
+    quizBox.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    exitBtn.innerHTML = "Exit Quiz";
+    exitBtn.style.display = "block";
 }
 */
-function showFeedback(){
-    quizBox.classList.add('hide')
-    feedbackBox.classList.remove('hide')
-    const scoreText = score-text.querySelector('score-text')
-}
-
 // Making arrays with all the questions
 const questions = [
     {
@@ -184,7 +179,7 @@ const questions = [
             { text: "Drinking is done for today", correct: false }
         ]
     },
-    
+
     {
         question: "In Australian slang, what do they mean by: thongs?",
         answers: [
