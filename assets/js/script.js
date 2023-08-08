@@ -64,7 +64,7 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct;
     Array.from(optionList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    });
+    })
 nextBtn.classList.remove('hide')
 }
 
@@ -80,6 +80,21 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+if (allQuestionsAnswered()){
+showFeedback()
+} else {
+    displayNextQuestion();
+}
+
+function allQuestionsAnswered(){
+    for (let i= 0<questions.lenght;i++){
+        if (!questions[i].isAnswered()){
+            return false;
+        }
+    }
+    return true;
 }
 /*
 if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
