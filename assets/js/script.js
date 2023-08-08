@@ -7,9 +7,8 @@ const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
 const timeCount = quizBox.querySelector('.timer .timer-sec');
-
 const questionTitle = document.getElementById('question-title');
-const optionList = document.getElementById('answer-buttons');
+const answerList = document.getElementById('answer-buttons');
 
 const counterQuestions = document.getElementsByClassName('counter')[0];
 
@@ -37,7 +36,7 @@ nextBtn.addEventListener('click', () => {
     questionNum++;
     giveRandomQuestion();
     showQuestionCounter(questionNum);
-    clearInterval(counter);
+    clearInterval(timeCounter);
     Starttimer(timeValue);
 });
 
@@ -68,23 +67,23 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener('click', selectAnswer);
-        optionList.appendChild(button);
+        answerList.appendChild(button);
     });
 }
 
 //Change color when an answer is clicked
 function resetQuestions() {
     nextBtn.classList.add('hide');
-    while (optionList.firstChild) {
-        optionList.removeChild
-            (optionList.firstChild);
+    while (answerList.firstChild) {
+        answerList.removeChild
+            (answerList.firstChild);
     }
 }
 
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    Array.from(optionList.children).forEach(button => {
+    Array.from(answerList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
     nextBtn.classList.remove('hide');
@@ -104,6 +103,14 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 }
 
+function Starttimer(time) {
+    timeCounter = setInterval(timer, 1000);
+    function timer() {
+        timeCount.textContent = time;
+        time--;
+    }
+}
+
 //Checks the question counter in the footer of the quiz
 function showQuestionCounter(index) {
     const questionCounter = document.getElementsByClassName('counter')[0];
@@ -111,13 +118,6 @@ function showQuestionCounter(index) {
     questionCounter.innerHTML = counter;
 }
 
-function Starttimer(time){
-    timeCounter = setInterval(timer, 1000);
-    function timer(){
-        timeCount.textContent = time;
-        time--;
-    }
-}
 
 /*
 function setNextBtn() {
