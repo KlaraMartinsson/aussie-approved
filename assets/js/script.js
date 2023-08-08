@@ -67,7 +67,7 @@ function selectAnswer(e) {
     if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
         nextBtn.classList.remove('hide');
     } else {
-        //Come back and put in result
+        quizBox.innerText = "Hello" //Come back and put in result
     }
 }
 

@@ -24,7 +24,7 @@
 
         <div class="btn-group">
             <a href="index.html">
-            <button class="buttons" class="quit-btn">Exit Quiz</button>
+            <button class="buttons">Exit Quiz</button>
             </a>
             <button class="buttons" id="continue-btn">Continue</button>
         </div>
@@ -32,7 +32,8 @@
     </section>
     
     <!--Quiz box-->
-    <section class="quiz-box hide">
+    <section>
+        <div class="quiz-box hide">
     <header>
         <h2>Aussie Approved Quiz</h2>
         <div class="timer">
@@ -53,7 +54,22 @@
         <button id="next-btn">Next</button>
         </div>
     </section>
+    </div>
 
+    <!--Feedback box-->
+    <section>
+<div class ="feedback-box hide">
+<div class = "feedback-icon">
+    <div class="finished-text"> Well done, you finished the quiz!</div>
+    <div class="score"></div>
+    <div class="btn-group">
+        <a href="index.html">
+            <button class="buttons">Exit Quiz</button>
+        </a>
+    </div>
+</div>
+</div>
+    </section>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
