@@ -146,14 +146,32 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    width: 120px;
     height: 40px;
     background: #003fbe;
     border: 1px solid black;
     border-radius: 6px;
     padding: 0 8px;
+    user-select: none;
 }
 
+.timer-text{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.timer-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 19px;
+    height: 30px;
+    width: 35px;
+    background: blueviolet ;
+    border-radius: 3px;
+    color: aliceblue;
+}
 
 .quiz{
     padding: 18px 0;
@@ -209,6 +227,7 @@ header{
 display: flex;
 text-align: left;
 column-gap: 10px;
+user-select: none;
 }
 
 /*Content for the feedback box
