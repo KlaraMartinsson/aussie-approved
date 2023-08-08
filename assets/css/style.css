@@ -22,7 +22,7 @@
     font-family: 'Lisu Bosa', serif;
 }
 
-p {
+#sub-heading {
     font-size: 24px;
     padding: 10px 0 0 0;
     font-family: 'Lisu Bosa', serif;
@@ -187,6 +187,12 @@ header{
     display: block;
     font-size: 17px;
     cursor: pointer;
+}
+
+.counter span {
+display: flex;
+text-align: left;
+column-gap: 10px;
 }
 
 /*Content for the feedback box

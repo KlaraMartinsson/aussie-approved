@@ -102,7 +102,7 @@ function clearStatusClass(element) {
 //Checks the question counter in the footer of the quiz
 function showQuestionCounter(index) {
     const questionCounter = document.getElementsByClassName('counter')[0];
-    let counter = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>questions</span>';
+    let counter = '<span><p>' + index + '</p>Of<p>' + questions.length + '</p>Questions</span>';
     questionCounter.innerHTML = counter;
 }
 
@@ -213,15 +213,6 @@ const questions = [
         ]
     },
     {
-        question: "In Australian slang, what do they mean by: he could put a horn on a jellyfish?",
-        answers: [
-            { text: "He's very successful", correct: false },
-            { text: "He's a liar", correct: false },
-            { text: "He's a dreamer", correct: false },
-            { text: "He's very hot", correct: true }
-        ]
-    },
-    {
         question: "In Australian slang, what do they mean by: a dogs breakfast?",
         answers: [
             { text: "Ugly", correct: false },
@@ -249,7 +240,7 @@ const questions = [
         ]
     },
     {
-        question: "In Australian slang, what do they mean by: going to Woop Woop?",
+        question: "In Australian slang, what do they mean by: Woop Woop?",
         answers: [
             { text: "The outback", correct: false },
             { text: "In New South Wales", correct: false },
