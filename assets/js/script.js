@@ -3,7 +3,6 @@
 const continueBtn = document.getElementById('continue-btn');
 const exitBtn = document.getElementById('exit-btn');
 const rulesBox = document.getElementById('rules-box');
-continueBtn.addEventListener('click', startQuiz);
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
 
@@ -11,6 +10,14 @@ const questionTitle = document.getElementById('question-title');
 const optionList = document.getElementById('answer-buttons');
 
 const nextBtn = document.getElementById('next-btn');
+
+let scoreCounters = 0;
+//Starts quiz when continue button is clicked
+continueBtn.addEventListener('click', startQuiz);
+//Start counting scores when contiue button is clicked
+continueBtn.addEventListener('click', () => {
+showScore(1);
+});
 
 //Gives random questions in the quiz
 let randomQuestions, currentQuestionIndex;
@@ -81,6 +88,13 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+
+//Checks the scores
+function showScore(index){
+    const scoreCounter = document.getElementsByClassName('scores')[0];
+    let scores = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>questions</span>';
+    scoreCounter.innerHTML = scores;
 }
 
 /*
