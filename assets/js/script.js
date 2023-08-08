@@ -4,6 +4,7 @@ const continueBtn = document.getElementById('continue-btn');
 const rulesBox = document.getElementById('rules-box');
 continueBtn.addEventListener('click', startQuiz);
 const quizBox = document.getElementsByClassName('quiz-box')[0];
+const feedbackBox = document.getElementsByClassName('feedback-box')[0];
 
 const questionTitle = document.getElementById('question-title');
 const optionList = document.getElementById('answer-buttons');
@@ -64,11 +65,7 @@ function selectAnswer(e) {
     Array.from(optionList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
-    if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
-        nextBtn.classList.remove('hide');
-    } else {
-        quizBox.innerText = "Hello" //Come back and put in result
-    }
+nextBtn.classList.remove('hide')
 }
 
 function setStatusClass(element, correct) {
@@ -83,6 +80,19 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
+}
+/*
+if (randomQuestions.length > currentQuestionIndex + 1) { //Checks if their is any more questions
+    quizBox.classList.add('hide');
+    showFeedback();
+} else {
+    showFeedback(); //Come back and put in result
+}
+*/
+function showFeedback(){
+    quizBox.classList.add('hide')
+    feedbackBox.classList.remove('hide')
+    const scoreText = score-text.querySelector('score-text')
 }
 
 // Making arrays with all the questions
@@ -159,6 +169,7 @@ const questions = [
             { text: "Drinking is done for today", correct: false }
         ]
     },
+    
     {
         question: "In Australian slang, what do they mean by: thongs?",
         answers: [
