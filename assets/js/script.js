@@ -12,11 +12,12 @@ const optionList = document.getElementById('answer-buttons');
 const nextBtn = document.getElementById('next-btn');
 
 let scoreCounters = 0;
+let scoreNum = 1;
 //Starts quiz when continue button is clicked
 continueBtn.addEventListener('click', startQuiz);
 //Start counting scores when contiue button is clicked
 continueBtn.addEventListener('click', () => {
-showScore(1);
+    showScore(1);
 });
 
 //Gives random questions in the quiz
@@ -25,7 +26,10 @@ let randomQuestions, currentQuestionIndex;
 //Gives new questions when the next button is clicked
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
+    scoreCounters++;
+    scoreNum++;
     giveRandomQuestion();
+    showScore(scoreNum);
 });
 
 // Hiding the rule box and showing question box, when clicking on continue button
@@ -91,7 +95,7 @@ function clearStatusClass(element) {
 }
 
 //Checks the scores
-function showScore(index){
+function showScore(index) {
     const scoreCounter = document.getElementsByClassName('scores')[0];
     let scores = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>questions</span>';
     scoreCounter.innerHTML = scores;
