@@ -24,7 +24,13 @@ When the quiz starts the timer begins and they have 15 seconds to chose their an
 When all of the questions are answered the user comes to the feedback page where they get to know how much they scored in the quiz. 
 ![Feedback page](assets/readme-images/feedback-page.JPG)
 ## Existing features
-## Feauture that could improve
+
+- Nice layout that look similar on all of the pages
+- Responsive design from 320px to 1300px
+- A funny quiz with aussie slangs that a first time backpacker would need for their trip to Australia
+- Easy navigation through all pages
+- Feedback for user to know which question where correct and how much they scored
+
 ## Testing
 ### Code validation
 #### HTML
