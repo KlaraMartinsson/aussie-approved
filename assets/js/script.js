@@ -1,12 +1,11 @@
 //Getting all necessary elements
 
 const continueBtn = document.getElementById('continue-btn');
-const exitBtn = document.getElementById('exit-btn');
 const nextBtn = document.getElementById('next-btn');
 const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
-const timeCount = quizBox.querySelector('.timer .timer-sec');
+const timeCount = document.querySelector('.timer .timer-sec');
 const questionTitle = document.getElementById('question-title');
 const answerList = document.getElementById('answer-buttons');
 
@@ -19,13 +18,12 @@ let timeCounter;
 let timeValue = 15;
 let scores = 0;
 let scoreText = document.getElementsByClassName('score-text')[0];
-//Starts quiz when continue button is clicked
-continueBtn.addEventListener('click', startQuiz);
 
-//Start counting questions when contiue button is clicked
+//Start quiz and counting questions when contiue button is clicked
 continueBtn.addEventListener('click', () => {
     showQuestionCounter(1);
     Starttimer(15);
+    startQuiz();
 });
 
 //Gives random questions in the quiz
@@ -45,7 +43,7 @@ nextBtn.addEventListener('click', () => {
 // Hiding the rule box and showing question box, when clicking on continue button
 function startQuiz() {
     rulesBox.classList.add('hide');
-    randomQuestions = questions.sort(() => Math.random() - .5); //Randomise questions
+    randomQuestions = questions.sort(() => Math.random() -0.5); //Randomise questions
     currentQuestionIndex = 0;
     quizBox.classList.remove('hide');
     counterQuestions.classList.remove('hide');
@@ -137,7 +135,7 @@ function showQuestionCounter(index) {
 function showFeedback() {
     quizBox.classList.add('hide'); // Hides the quiz box
     feedbackBox.classList.remove('hide'); // Shows the Feedback box
-    scoreText.innerText = `Mate, you finished the quiz! You have scored ${scores}/15 points. Good luck on your new adventures in Australia!`; 
+    scoreText.innerText = `Mate, you finished the quiz! You have scored ${scores}/15 points. Good luck on your new adventures in Australia!`;
 }
 
 // Making arrays with all the questions

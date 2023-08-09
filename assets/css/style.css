@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     padding: 160px 0 0 0;
     font-family: 'Lisu Bosa', serif;
+    text-align: center;
 }
 
 .home-title {
@@ -248,7 +249,7 @@ header {
     font-weight: 900;
 }
 
-
+/* Content for the Feedback box*/
 .feedback-box {
     margin: 0 auto;
     width: 60vw;
@@ -270,4 +271,19 @@ header {
 /* Hides content when needed*/
 .hide {
     display: none;
+}
+
+/* Media queries*/
+@media screen and (max-width:560px){
+    .home-title{
+        font-size: 50px;
+    }
+    #sub-heading{
+        font-size: 20px;
+    }
+
+    #rules-box{
+        height:500px
+
+    }
 }
