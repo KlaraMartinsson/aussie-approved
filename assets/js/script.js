@@ -29,10 +29,10 @@ continueBtn.addEventListener('click', () => {
 //Gives random questions in the quiz
 let randomQuestions, currentQuestionIndex;
 
-//Gives new questions when the next button is clicked and counts every question
+//Gives new questions when the next button is clicked, counts every question, starts the timer
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
-    questionCounters++; 
+    questionCounters++;
     questionNum++;
     giveRandomQuestion();
     showQuestionCounter(questionNum);
@@ -71,7 +71,7 @@ function showQuestion(question) {
     });
 }
 
-//Change color when an answer is clicked
+// Resets the old questions to make room for the new ones
 function resetQuestions() {
     nextBtn.classList.add('hide');
     while (answerList.firstChild) {
@@ -86,9 +86,14 @@ function selectAnswer(e) {
     Array.from(answerList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
-    nextBtn.classList.remove('hide');
+    if (randomQuestions.length > currentQuestionIndex + 1) {
+        nextBtn.classList.remove('hide'); //Shows next button when answer is selected
+    } else {
+        showFeedback()
+    }
 }
 
+//Change color when an answer is clicked
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -103,6 +108,7 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 }
 
+// Timer in the quiz 
 function Starttimer(time) {
     timeCounter = setInterval(timer, 1000);
     function timer() {
@@ -118,29 +124,12 @@ function showQuestionCounter(index) {
     questionCounter.innerHTML = counter;
 }
 
-
-/*
-function setNextBtn() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        showFeedback();
-    }
-}
-
-nextBtn.addEventListener('click', () => {
-    if (currentQuestionIndex < questions.length) {
-        setNextBtn();
-    });
-
+// Shows Feedback box
 function showFeedback() {
-    resetState();
-    quizBox.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    exitBtn.innerHTML = "Exit Quiz";
-    exitBtn.style.display = "block";
+    quizBox.classList.add('hide'); // Hides the quiz box
+    feedbackBox.classList.remove('hide') // Shows the Feedback bx
 }
-*/
+
 // Making arrays with all the questions
 const questions = [
     {
@@ -151,7 +140,7 @@ const questions = [
             { text: "Everything is okay", correct: true },
             { text: "The weather is going to be okay", correct: false }
         ]
-    },
+    },/*
     {
         question: "In Australian slang, what do they mean by: A cold one?",
         answers: [
@@ -269,7 +258,7 @@ const questions = [
             { text: "Try harder", correct: false },
             { text: "To fix something", correct: false }
         ]
-    },
+    },*/
     {
         question: "In Australian slang, what do they mean by: chock-a-block?",
         answers: [

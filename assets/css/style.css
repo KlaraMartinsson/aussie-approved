@@ -232,7 +232,6 @@ user-select: none;
 margin-top: 25px;
 }
 
-/*Content for the feedback box
 .feedback-box{
     margin: 0 auto;
     width: 500px;
@@ -243,8 +242,6 @@ margin-top: 25px;
     box-shadow: 0 0 15px #B90C0C;
     margin-top: 150px;
 }
-*/
-
 
 /* Hides content when needed*/
 .hide {
