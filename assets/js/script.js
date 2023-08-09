@@ -17,6 +17,7 @@ let questionCounters = 0;
 let questionNum = 1;
 let timeCounter;
 let timeValue = 15;
+let scores = 0;
 //Starts quiz when continue button is clicked
 continueBtn.addEventListener('click', startQuiz);
 
@@ -114,6 +115,10 @@ function Starttimer(time) {
     function timer() {
         timeCount.textContent = time;
         time--;
+        if (time < 0){
+            clearInterval(timeCounter);
+            timeCount.textContent = '00';
+        }
     }
 }
 
@@ -127,7 +132,7 @@ function showQuestionCounter(index) {
 // Shows Feedback box
 function showFeedback() {
     quizBox.classList.add('hide'); // Hides the quiz box
-    feedbackBox.classList.remove('hide') // Shows the Feedback bx
+    feedbackBox.classList.remove('hide') // Shows the Feedback box
 }
 
 // Making arrays with all the questions
