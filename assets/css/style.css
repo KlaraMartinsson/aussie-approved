@@ -10,8 +10,11 @@
 body {
     background: url('../images/background.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 }
 
 /* Content for the home page */
@@ -56,7 +59,10 @@ body {
 /* Content for the rule box*/
 #rules-box {
     margin: 0 auto;
-    width: 500px;
+    max-width: 500px;
+    max-height: 400px;
+    width: 80vw;
+    height: 40vh;
     background: white;
     border-radius: 10px;
     padding: 12px;
@@ -108,8 +114,8 @@ body {
 
 .quiz-box {
     margin: 0 auto;
-    width: 750px;
-    height: 440px;
+    width: 60vw;
+    height: 70vh;
     background: #FFFF;
     border-radius: 10px;
     padding: 12px;
@@ -178,7 +184,7 @@ header {
 /* Answers for the questions*/
 .answer-btn {
     background: #FFFF;
-    width: 100%;
+    width: 55vw;
     border: 3px solid #B90C0C;
     border-block-color: #3066D2;
     writing-mode: horizontal-tb;
@@ -235,7 +241,7 @@ color: white;
     text-align: left;
     column-gap: 10px;
     user-select: none;
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 17px;
 }
 
