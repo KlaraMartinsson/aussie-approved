@@ -21,7 +21,8 @@ When the quiz starts the timer begins and they have 15 seconds to chose their an
 ![Quiz page](assets/readme-images/quiz-page.JPG)
 ![Quiz correct/incorrect page](assets/readme-images/quiz-correct.JPG)
 ### Feedback page
-When all the questions are answered 
+When all of the questions are answered the user comes to the feedback page where they get to know how much they scored in the quiz. 
+![Feedback page](assets/readme-images/feedback-page.JPG)
 ## Existing features
 ## Feauture that could improve
 ## Testing
