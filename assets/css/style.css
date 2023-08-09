@@ -175,6 +175,7 @@ header{
 
 .quiz{
     padding: 18px 0;
+    text-align: center;
 }
 /* Answers for the questions*/
 .answer-btn{
@@ -213,14 +214,14 @@ header{
 #next-btn{
     color: black;
     border: 1px solid #B90C0C;
-    box-shadow: 0 0 4px #B90C0C;
     width: 90px;
     border-radius: 7px;
     padding: 8px;
     margin: 5px auto 0;
-    display: block;
     font-size: 17px;
     cursor: pointer;
+    text-align: center;
+    background: rgb(241, 241, 241);
 }
 /*Positioning of the countdown for the questions*/
 .counter span {
@@ -228,6 +229,7 @@ display: flex;
 text-align: left;
 column-gap: 10px;
 user-select: none;
+margin-top: 25px;
 }
 
 /*Content for the feedback box

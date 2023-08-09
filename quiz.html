@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A funny quiz for backpackers to learn Australian slang" />
+    <meta
+      name="description"
+      content="A funny quiz for backpackers to learn Australian slang"
+    />
     <meta name="keywords" content="quiz, australia, slang, backpackers" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Aussie Approved</title>
-</head>
-<body style="background-color: rgb(23, 23, 147);">
-
-<!--Rules box-->
-<section>
-<div id="rules-box">
+  </head>
+  <body style="background-color: rgb(23, 23, 147)">
+    <!--Rules box-->
+    <section>
+      <div id="rules-box">
         <h1>Rules of the Quiz</h1>
-        <span class="rules">1. Once you select your answer, you can't choose another.</span>
-        <span class="rules">2. You will be able to see your scores while you play.</span>
-        <span class="rules">3. You will have <span style="color:blue;">10 seconds</span> per question to select an
-            answer.</span>
-        <span class="rules">4. You can't exit from the Quiz while you're playing.</span>
+        <span class="rules"
+          >1. Once you select your answer, you can't choose another.</span
+        >
+        <span class="rules"
+          >2. You will be able to see your scores while you play.</span
+        >
+        <span class="rules"
+          >3. You will have <span style="color: blue">10 seconds</span> per
+          question to select an answer.</span
+        >
+        <span class="rules"
+          >4. You can't exit from the Quiz while you're playing.</span
+        >
 
         <div class="btn-group">
-            <a href="index.html">
+          <a href="index.html">
             <button class="buttons" id="exit-btn">Exit Quiz</button>
-            </a>
-            <button class="buttons" id="continue-btn">Continue</button>
+          </a>
+          <button class="buttons" id="continue-btn">Continue</button>
         </div>
-    </div>
-</section>
-    
+      </div>
+    </section>
+
     <!--Quiz box-->
-<section>
-        <div class="quiz-box hide">
-    <header>
-        <h2>Aussie Approved Quiz</h2>
-        <div class="timer">
+    <section>
+      <div class="quiz-box hide">
+        <header>
+          <h2>Aussie Approved Quiz</h2>
+          <div class="timer">
             <div class="timer-text">Time left</div>
             <div class="timer-sec">15</div>
-        </div>
-    </header>
+          </div>
+        </header>
         <div class="quiz">
+          <h3 id="question-title">Questions about Australian slang</h3>
 
-        <h3 id="question-title">Questions about Australian slang</h3>
-
-        <div id="answer-buttons">
-        <button class="answer-btn">Answer</button>
-        <button class="answer-btn">Answer</button>
-        <button class="answer-btn">Answer</button>
-        <button class="answer-btn">Answer</button>
-        </div>
-        <button id="next-btn" class="hide next-btn answer-btn">Next</button>
-        <!--Quiz box footer-->
-        <footer>
+          <div id="answer-buttons">
+            <button class="answer-btn">Answer</button>
+            <button class="answer-btn">Answer</button>
+            <button class="answer-btn">Answer</button>
+            <button class="answer-btn">Answer</button>
+          </div>
+          <button id="next-btn" class="hide next-btn answer-btn">Next</button>
+          <!--Quiz box footer-->
+          <footer>
             <div class="counter hide">
-                <span><p> 1</p><p> /</p><p> 15</p> Questions</span>
+              <span
+                ><p>1</p>
+                <p>/</p>
+                <p>15</p>
+                Questions</span
+              >
             </div>
-        </footer>
+          </footer>
         </div>
-        </div>
-</section>
-
+      </div>
+    </section>
 
     <!--Feedback box-->
-<section>
-<div class ="feedback-box hide">
-<div class = "feedback-icon">
-<i class="fa-solid fa-trophy fa-2xl" style="color: #ea3939;"></i>
-    </div>
-    <h3 class="score-text">Well done, you finished the quiz!</h3>
-    <div class="score"></div>
-    <div class="btn-group">
-        <a href="index.html">
+    <section>
+      <div class="feedback-box hide">
+        <div class="feedback-icon">
+          <i class="fa-solid fa-trophy fa-2xl" style="color: #ea3939"></i>
+        </div>
+        <h3 class="score-text">Well done, you finished the quiz!</h3>
+        <div class="score"></div>
+        <div class="btn-group">
+          <a href="index.html">
             <button class="buttons">Exit Quiz</button>
-        </a>
-    </div>
-</div>
-
-</section>
-<!--javacript link-->
-<script src="assets/js/script.js"></script>
-<!--font awesome script-->
-<script src="https://kit.fontawesome.com/2da612ed01.js" crossorigin="anonymous"></script>
-</body>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--javacript link-->
+    <script src="assets/js/script.js"></script>
+    <!--font awesome script-->
+    <script
+      src="https://kit.fontawesome.com/2da612ed01.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
