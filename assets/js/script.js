@@ -56,7 +56,7 @@ function giveRandomQuestion() {
     showQuestion(randomQuestions[currentQuestionIndex]);
 }
 
-//Shows the next questions in the game
+//Shows the questions in the game
 function showQuestion(question) {
     questionTitle.innerText = question.question;
     question.answers.forEach(answer => {
@@ -120,7 +120,6 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(timeCounter);
             timeCount.textContent = '00';
-
         }
     }
 }

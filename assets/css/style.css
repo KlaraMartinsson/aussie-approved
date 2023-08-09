@@ -102,6 +102,7 @@ body {
     border: 1px solid #3066D2;
     box-shadow: 0 0 2px #3066D2;
     cursor: pointer;
+    color: black;
 }
 
 .buttons:hover {
@@ -193,6 +194,7 @@ header {
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;
+    color: black;
 }
 
 .answer-btn:hover {
@@ -305,6 +307,10 @@ header {
 }
 
 @media (min-width: 560px) and (max-width:796px) {
+    .home-content {
+        padding: 250px 0 0 0;
+    }
+
     h2 {
         font-size: 20px;
     }
@@ -373,6 +379,18 @@ header {
 
     .quiz-box {
         margin-top: 60px;
-        width: ;
+
+    }
+
+    .home-title {
+        color: white;
+        font-size: 30px;
+        /*text-shadow code from https: //stackoverflow.com/questions/13426875/text-border-using-css-border-around-text*/
+        text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+            1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    }
+
+    #sub-heading {
+        color: white;
     }
 }
