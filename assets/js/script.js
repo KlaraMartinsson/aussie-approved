@@ -18,6 +18,7 @@ let questionNum = 1;
 let timeCounter;
 let timeValue = 15;
 let scores = 0;
+let scoreText = document.getElementsByClassName('score-text')[0];
 //Starts quiz when continue button is clicked
 continueBtn.addEventListener('click', startQuiz);
 
@@ -83,14 +84,18 @@ function resetQuestions() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
+    selectedButton.classList.add('selected');
     const correct = selectedButton.dataset.correct;
     Array.from(answerList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
+    if (correct) {
+        scores += 1;
+    }
     if (randomQuestions.length > currentQuestionIndex + 1) {
         nextBtn.classList.remove('hide'); //Shows next button when answer is selected
     } else {
-        showFeedback()
+        showFeedback();
     }
 }
 
@@ -115,7 +120,7 @@ function Starttimer(time) {
     function timer() {
         timeCount.textContent = time;
         time--;
-        if (time < 0){
+        if (time < 0) {
             clearInterval(timeCounter);
             timeCount.textContent = '00';
         }
@@ -132,7 +137,8 @@ function showQuestionCounter(index) {
 // Shows Feedback box
 function showFeedback() {
     quizBox.classList.add('hide'); // Hides the quiz box
-    feedbackBox.classList.remove('hide') // Shows the Feedback box
+    feedbackBox.classList.remove('hide'); // Shows the Feedback box
+    scoreText.innerText = `Well done, you finished the quiz! You have scored ${scores}/15 points!`; 
 }
 
 // Making arrays with all the questions
