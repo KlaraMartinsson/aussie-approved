@@ -10,7 +10,9 @@ The color palette was created using the [Colormind](https://colormind.io/) websi
 ### Typografi
 Google fonts were used for the title in the home page. I choose 'Lisa Bosa' because I thought it looked playful, perfect for a quiz. I used the common Arial for titles in the rule, quiz and feedback box to make it easier to read, while it still dont look to serious. For the buttons and the rules text I used the defualt font Times New Roman. To make some contrats and have them more serious looking. 
 ## Features
-### Start page
+### Home page
+The home page is working fully responsively and has the same background like the rest of the pages. It has a small concrete sub heading that is telling the user what the website/quiz is for and how they can use knowledge from it in real life. The home page also have a Start Quiz button that has a hover on it and a pointer to make it easier for the user to understand that its something to click on.
+![Home page](assets/readme-images/home-page.JPG)
 ### Rules page
 ### Quiz page
 ### Feedback page
