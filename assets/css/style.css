@@ -61,9 +61,7 @@ body {
 #rules-box {
     margin: 0 auto;
     max-width: 500px;
-    max-height: 400px;
-    width: 80vw;
-    height: 40vh;
+    height: 250px;
     background: white;
     border-radius: 10px;
     padding: 12px;
@@ -274,16 +272,107 @@ header {
 }
 
 /* Media queries*/
-@media screen and (max-width:560px){
-    .home-title{
-        font-size: 50px;
+@media (min-width:1300px) {
+    .home-content {
+        padding: 400px 0 0 0;
     }
-    #sub-heading{
+
+    .home-title {
+        font-size: 70px;
+    }
+
+    #sub-heading {
+        font-size: 37px;
+    }
+
+    #rules-box {
+        margin-top: 370px;
+    }
+
+    .quiz-box {
+        margin-top: 280px;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1280px) {
+    .home-content {
+        padding: 250px 0 0 0;
+    }
+
+    .quiz-box {
+        margin-top: 180px;
+    }
+}
+
+@media (min-width: 560px) and (max-width:796px) {
+    h2 {
         font-size: 20px;
     }
 
-    #rules-box{
-        height:500px
+    h3 {
+        font-size: 15px;
+    }
 
+    #rules-box {
+        margin-top: 370px;
+    }
+
+    .quiz-box {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width:560px) {
+    .home-title {
+        font-size: 50px;
+    }
+
+    #sub-heading {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:470px) {
+    #rules-box {
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .answer-btn {
+        font-size: 12px;
+    }
+
+    .timer {
+        width: 98px;
+        height: 33px;
+    }
+
+    .timer-text {
+        font-size: 14px;
+    }
+
+    .timer-sec {
+        font-size: 14px;
+        height: 20px;
+        width: 25px;
+    }
+}
+
+@media (min-width:320px) and (max-width:420px) {
+    #rules-box {
+        height: 390px;
+        margin-top: 80px;
+    }
+
+    .quiz-box {
+        margin-top: 60px;
+        width: ;
     }
 }

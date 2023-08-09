@@ -22,7 +22,7 @@ let scoreText = document.getElementsByClassName('score-text')[0];
 //Start quiz and counting questions when contiue button is clicked
 continueBtn.addEventListener('click', () => {
     showQuestionCounter(1);
-    Starttimer(15);
+    startTimer(15);
     startQuiz();
 });
 
@@ -37,7 +37,7 @@ nextBtn.addEventListener('click', () => {
     giveRandomQuestion();
     showQuestionCounter(questionNum);
     clearInterval(timeCounter);
-    Starttimer(timeValue);
+    startTimer(timeValue);
 });
 
 // Hiding the rule box and showing question box, when clicking on continue button
@@ -50,13 +50,13 @@ function startQuiz() {
     giveRandomQuestion();
 }
 
-//Gives random questions in the quiz
+//Gives random questions in the quiz and resets
 function giveRandomQuestion() {
     resetQuestions();
     showQuestion(randomQuestions[currentQuestionIndex]);
 }
 
-//Shows the questions in the game
+//Shows the next questions in the game
 function showQuestion(question) {
     questionTitle.innerText = question.question;
     question.answers.forEach(answer => {
@@ -112,7 +112,7 @@ function clearStatusClass(element) {
 }
 
 // Timer in the quiz 
-function Starttimer(time) {
+function startTimer(time) {
     timeCounter = setInterval(timer, 1000);
     function timer() {
         timeCount.textContent = time;
@@ -120,6 +120,7 @@ function Starttimer(time) {
         if (time < 0) {
             clearInterval(timeCounter);
             timeCount.textContent = '00';
+
         }
     }
 }
