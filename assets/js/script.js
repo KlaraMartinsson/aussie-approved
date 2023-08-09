@@ -148,7 +148,7 @@ const questions = [
             { text: "Everything is okay", correct: true },
             { text: "The weather is going to be okay", correct: false }
         ]
-    },/*
+    },
     {
         question: "In Australian slang, what do they mean by: A cold one?",
         answers: [
@@ -243,7 +243,7 @@ const questions = [
     {
         question: "In Australian slang, what do they mean by: dunny?",
         answers: [
-            { text: "A toilet", correct: false },
+            { text: "A diaper", correct: false },
             { text: "A pantry", correct: false },
             { text: "A toilet", correct: true },
             { text: "A dustbin", correct: false }
@@ -266,7 +266,7 @@ const questions = [
             { text: "Try harder", correct: false },
             { text: "To fix something", correct: false }
         ]
-    },*/
+    },
     {
         question: "In Australian slang, what do they mean by: mate?",
         answers: [

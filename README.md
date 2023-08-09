@@ -14,8 +14,14 @@ Google fonts were used for the title in the home page. I choose 'Lisa Bosa' beca
 The home page is working fully responsively and has the same background like the rest of the pages. It has a small concrete sub heading that is telling the user what the website/quiz is for and how they can use knowledge from it in real life. The home page also have a Start Quiz button that has a hover on it and a pointer to make it easier for the user to understand that its something to click on.
 ![Home page](assets/readme-images/home-page.JPG)
 ### Rules page
+A page where the user can see how the quiz is planned out.
+![Rules page](assets/readme-images/rules-page.JPG)
 ### Quiz page
+When the quiz starts the timer begins and they have 15 seconds to chose their answer. When an answer is selected the quiz give the user instant feedback if it was the correct or incorrect answer by the colors green for correct and red for incorrect. The user can also see in the bottom corner how many questions they have left. The next button dont show up until the user have chosen their answer to prevent cheating.
+![Quiz page](assets/readme-images/quiz-page.JPG)
+![Quiz correct/incorrect page](assets/readme-images/quiz-correct.JPG)
 ### Feedback page
+When all the questions are answered 
 ## Existing features
 ## Feauture that could improve
 ## Testing
