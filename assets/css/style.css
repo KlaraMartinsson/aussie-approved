@@ -60,7 +60,7 @@ body {
 /* Content for the rule box*/
 #rules-box {
     margin: 0 auto;
-    max-width: 500px;
+    width: 500px;
     height: 250px;
     background: white;
     border-radius: 10px;
@@ -288,7 +288,23 @@ header {
     }
 
     #rules-box {
-        margin-top: 370px;
+        margin-top: 320px;
+        width: 900px;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 3000px;
+    }
+
+    .rules {
+        font-size: 37px;
+    }
+
+    .btn-group .buttons {
+        font-size: 20px;
+        width: 130px;
+        height: 40px;
     }
 
     .quiz-box {
