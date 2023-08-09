@@ -84,7 +84,6 @@ function resetQuestions() {
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    selectedButton.classList.add('selected');
     const correct = selectedButton.dataset.correct;
     Array.from(answerList.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -138,7 +137,7 @@ function showQuestionCounter(index) {
 function showFeedback() {
     quizBox.classList.add('hide'); // Hides the quiz box
     feedbackBox.classList.remove('hide'); // Shows the Feedback box
-    scoreText.innerText = `Well done, you finished the quiz! You have scored ${scores}/15 points!`; 
+    scoreText.innerText = `Mate, you finished the quiz! You have scored ${scores}/15 points. Good luck on your new adventures in Australia!`; 
 }
 
 // Making arrays with all the questions
@@ -271,12 +270,12 @@ const questions = [
         ]
     },*/
     {
-        question: "In Australian slang, what do they mean by: chock-a-block?",
+        question: "In Australian slang, what do they mean by: mate?",
         answers: [
-            { text: "It's wierd", correct: false },
-            { text: "It's broken", correct: false },
-            { text: "It's full", correct: true },
-            { text: "It's sweet", correct: false }
+            { text: "Mature", correct: false },
+            { text: "Mankind", correct: false },
+            { text: "Friend", correct: true },
+            { text: "Feeling", correct: false }
         ]
     }
 ];

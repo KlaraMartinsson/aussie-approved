@@ -13,8 +13,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Content for the home page */
@@ -229,9 +229,9 @@ header {
     background: rgb(241, 241, 241);
 }
 
-#next-btn:hover{
-background: #003fbe;
-color: white;
+#next-btn:hover {
+    background: #003fbe;
+    color: white;
 }
 
 /*Positioning of the countdown for the questions*/
@@ -245,7 +245,7 @@ color: white;
 }
 
 .counter p {
-font-weight: 900;
+    font-weight: 900;
 }
 
 
@@ -260,9 +260,13 @@ font-weight: 900;
     margin-top: 150px;
 }
 
-.selected {
-border: 1px solid black;
+.feedback-icon {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 /* Hides content when needed*/
 .hide {
     display: none;
