@@ -30,22 +30,22 @@ body {
 
 #sub-heading {
     font-size: 24px;
-    padding: 10px 0 0 0;
-    margin-bottom: 50px;
+    padding: 15px 0 0 0;
+    margin-bottom: 30px;
 }
 
 /* button to start the quiz*/
 #start-btn {
     width: 190px;
     height: 40px;
-    border: 1px solid #3066D2;
     font-size: 18px;
-    background: white;
+    background: #B90C0C;
     border-radius: 10px;
-    box-shadow: 0 0 7px #3066D2;
+    box-shadow: 0 0 10px black;
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
+    color: white
 }
 
 #start-btn:hover {
@@ -165,7 +165,7 @@ header {
     font-size: 19px;
     height: 30px;
     width: 35px;
-    background: #3066D2;
+    background: #B90C0C;
     border-radius: 3px;
     color: aliceblue;
 }
@@ -236,6 +236,11 @@ color: white;
     column-gap: 10px;
     user-select: none;
     margin-top: 25px;
+    font-size: 17px;
+}
+
+.counter p {
+font-weight: 900;
 }
 
 
