@@ -274,6 +274,7 @@ header {
 }
 
 /* Media queries*/
+/* For larger screens size from 1300px and up */
 @media (min-width:1300px) {
     .home-content {
         padding: 400px 0 0 0;
@@ -311,7 +312,7 @@ header {
         margin-top: 280px;
     }
 }
-
+/* For medium screens size from 820px to 1280px */
 @media (min-width: 820px) and (max-width: 1280px) {
     .home-content {
         padding: 250px 0 0 0;
@@ -321,7 +322,7 @@ header {
         margin-top: 180px;
     }
 }
-
+/* For tablet screens size from 520px to 795px */
 @media (min-width: 560px) and (max-width:796px) {
     .home-content {
         padding: 250px 0 0 0;
@@ -343,7 +344,7 @@ header {
         margin-top: 160px;
     }
 }
-
+/* For smaller tablet screen size from 560px and up*/
 @media (max-width:560px) {
     .home-title {
         font-size: 50px;
@@ -353,7 +354,7 @@ header {
         font-size: 20px;
     }
 }
-
+/* For extra small tablet screen size from 470px and up*/
 @media (max-width:470px) {
     #rules-box {
         height: 350px;
@@ -386,7 +387,7 @@ header {
         width: 25px;
     }
 }
-
+/* Small devices (phones) from 320px to 420px) */
 @media (min-width:320px) and (max-width:420px) {
     #rules-box {
         height: 390px;
