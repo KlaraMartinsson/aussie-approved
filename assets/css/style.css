@@ -319,7 +319,7 @@ header {
     }
 
     .quiz-box {
-        margin-top: 180px;
+        margin-top: 110px;
     }
 }
 /* For tablet screens size from 520px to 795px */
@@ -390,12 +390,13 @@ header {
 /* Small devices (phones) from 320px to 420px) */
 @media (min-width:320px) and (max-width:420px) {
     #rules-box {
-        height: 390px;
-        margin-top: 80px;
+        height: 380px;
+        margin-top: 60px;
+        width: 290px;
     }
 
     .quiz-box {
-        margin-top: 60px;
+        margin-top: 40px;
 
     }
 
