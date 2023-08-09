@@ -20,19 +20,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 160px 0 0 0;
+    font-family: 'Lisu Bosa', serif;
 }
 
 .home-title {
     font-size: 70px;
-    padding: 90px 0 0 0;
-    color: #609EFD;
-    font-family: 'Lisu Bosa', serif;
 }
 
 #sub-heading {
     font-size: 24px;
     padding: 10px 0 0 0;
-    font-family: 'Lisu Bosa', serif;
     margin-bottom: 50px;
 }
 
@@ -40,18 +38,18 @@ body {
 #start-btn {
     width: 190px;
     height: 40px;
-    border: 1px solid #609EFD;
+    border: 1px solid #3066D2;
     font-size: 18px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 7px #609EFD;
+    box-shadow: 0 0 7px #3066D2;
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
 }
 
 #start-btn:hover {
-    background: #609EFD;
+    background: #3066D2;
     color: white;
 }
 
@@ -59,7 +57,8 @@ body {
 #rules-box {
     margin: 0 auto;
     width: 500px;
-    background: white border-radius: 10px;
+    background: white;
+    border-radius: 10px;
     padding: 12px;
     border: 1px solid #000000;
     box-shadow: 0 0 10px #000000;
@@ -69,7 +68,7 @@ body {
 /* Rules heading styling*/
 #rules-box h1 {
     font-size: 48px;
-    color: #609EFD;
+    color: #3066D2;
     font-family: 'arial';
 }
 
@@ -95,7 +94,7 @@ body {
     height: 30px;
     border-radius: 3px;
     letter-spacing: 1px;
-    border: 1px solid #609EFD;
+    border: 1px solid #3066D2;
     box-shadow: 0 0 2px #3066D2;
     cursor: pointer;
 }
@@ -114,8 +113,8 @@ body {
     background: #FFFF;
     border-radius: 10px;
     padding: 12px;
-    border: 1px solid #B90C0C;
-    box-shadow: 0 0 15px #B90C0C;
+    border: 1px solid #000000;
+    box-shadow: 0 0 15px #000000;
     margin-top: 70px;
 }
 
@@ -146,7 +145,7 @@ header {
     justify-content: space-between;
     width: 120px;
     height: 40px;
-    background: #003fbe;
+    background: rgb(241, 241, 241);
     border: 1px solid black;
     border-radius: 6px;
     padding: 0 8px;
@@ -166,7 +165,7 @@ header {
     font-size: 19px;
     height: 30px;
     width: 35px;
-    background: blueviolet;
+    background: #3066D2;
     border-radius: 3px;
     color: aliceblue;
 }
@@ -199,13 +198,13 @@ header {
 }
 
 .answer-btn.correct {
-    background: rgb(72, 176, 72);
+    background: rgb(123, 209, 123);
     border: 2px solid black;
     color: black;
 }
 
 .answer-btn.incorrect {
-    background: rgb(252, 94, 94);
+    background: rgb(255, 124, 124);
     border: 2px solid black;
     color: black;
 }
@@ -213,7 +212,8 @@ header {
 /*Next button*/
 #next-btn {
     color: black;
-    border: 1px solid #B90C0C;
+    border: 1px solid black;
+    box-shadow: 0 0 2px black;
     width: 90px;
     border-radius: 7px;
     padding: 8px;
@@ -222,6 +222,11 @@ header {
     cursor: pointer;
     text-align: center;
     background: rgb(241, 241, 241);
+}
+
+#next-btn:hover{
+background: #003fbe;
+color: white;
 }
 
 /*Positioning of the countdown for the questions*/
