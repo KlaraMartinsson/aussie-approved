@@ -10,6 +10,15 @@ The color palette was created using the [Colormind](https://colormind.io/) websi
 ### Typografi
 Google fonts were used for the title in the home page. I choose 'Lisa Bosa' because I thought it looked playful, perfect for a quiz. I used the common Arial for titles in the rule, quiz and feedback box to make it easier to read, while it still dont look to serious. For the buttons and the rules text I used the defualt font Times New Roman. To make some contrats and have them more serious looking. 
 ## Features
+
+### Existing features
+
+- Nice layout that look similar on all of the pages
+- Responsive design from 320px to 1300px
+- A funny quiz with aussie slangs that a first time backpacker would need for their trip to Australia
+- Easy navigation through all pages
+- Feedback for user to know which question where correct and how much they scored
+
 ### Home page
 The home page is working fully responsively and has the same background like the rest of the pages. It has a small concrete sub heading that is telling the user what the website/quiz is for and how they can use knowledge from it in real life. The home page also have a Start Quiz button that has a hover on it and a pointer to make it easier for the user to understand that its something to click on.
 ![Home page](assets/readme-images/home-page.JPG)
@@ -23,15 +32,10 @@ When the quiz starts the timer begins and they have 15 seconds to chose their an
 ### Feedback page
 When all of the questions are answered the user comes to the feedback page where they get to know how much they scored in the quiz. 
 ![Feedback page](assets/readme-images/feedback-page.JPG)
-## Existing features
-
-- Nice layout that look similar on all of the pages
-- Responsive design from 320px to 1300px
-- A funny quiz with aussie slangs that a first time backpacker would need for their trip to Australia
-- Easy navigation through all pages
-- Feedback for user to know which question where correct and how much they scored
-
 ## Testing
+- The website have been tested with W3C Validator, Jigsaw Validator, Js Hint, The Am I Responsive website and Google Chrome lighthouse.
+- All pages have been tested for screen sizes from 320px up to 1300px.
+- The websites pictures are not pixeled or stretch out on any pages.
 ### Code validation
 #### HTML
 #### CSS
