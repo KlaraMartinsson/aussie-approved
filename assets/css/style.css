@@ -160,24 +160,6 @@ header {
     font-weight: 600;
 }
 
-.timer-text {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.timer-sec {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 19px;
-    height: 30px;
-    width: 35px;
-    background: #B90C0C;
-    border-radius: 3px;
-    color: aliceblue;
-}
-
 .quiz {
     padding: 18px 0;
     text-align: center;
@@ -346,7 +328,7 @@ header {
     }
 
     .quiz-box {
-        margin-top: 160px;
+        margin-top: 100px;
     }
 }
 
