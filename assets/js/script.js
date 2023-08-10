@@ -119,7 +119,7 @@ function startTimer(time) {
         time--;
         if (time < 0) {
             clearInterval(timeCounter);
-            timeCount.textContent = '00';
+            timeCount.textContent = '0';
         }
     }
 }

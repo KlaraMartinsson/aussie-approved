@@ -1,12 +1,24 @@
 # Aussie Approved
 ![View the live project here.](länk)
 Aussie Approved is a website that want to reach out to people that want to backpack Australia. In this website they will learn the Australian slang, so they are ready to fit in and get approved by the aussies!
+It has 20 questions and have 4 diffrent options. The website is responsive and fit larg screens, medium scrren, tablets and phones. In the end of the quiz there will be a feedback page that tells the user how much they scored, also a quit button to return back to the home page.
 ![Website in diffrent screens](assets/readme-images/responsive.JPG)
-## Design
+## User Experience
+#### First user goals
+This quiz is for people that want to backpack Australia and fit in easily. They will have a better chance at that by learning the aussie slangs that I use in this quiz.
+- As a first time user, I want them to quickly understand what the webpage is about. 
+- It should be a easy quiz where the user dont get confused by disturbing design or pop ups.
+- The countent should be easily readable and with as litle grammatical mistakes as possible.
+- Smooth navigation through the quiz
+#### Returning user goals
+- Coming back to the quiz becauce it was fun and they need to get a refresher.
+- Coming back to show their friends and family.
+- If I were to add high score and different levels of difficult the user could challenge themself and their friends and family.
 ### Wireframes
-I made wireframes to get an idea of how I wanted my website to turn out and to see how it would work out with responsivness. I changed the look of it to make it look more like you are on the same webpage when the quiz begins. 
+I made wireframes to get an idea of how I wanted my website to turn out and to see how it would work out with responsivness for better user experience. I changed the look of it to make it look more like you are on the same webpage when the quiz begins.
 ![Wireframe for home page](assets/readme-images/wireframes.JPG)
-![Wireframe for quiz](assets/readme-images/questions-wireframe.JPG)
+![Wireframe for quiz](assets/readme-images/questions-wireframes.JPG)
+## Design
 ### Color theme
 I wanted the website to have the same theme through the whole process to make it more user friendly. I did that by having the same colors and background image in every step. I focused on having colors with good contrast for readability, for example blue and red. I also match the colors with the Australian flag to keep the theme of Australia. I used the colors black and white to have a nice structured layout.
 ![Color palette for the website](assets/readme-images/colors.JPG)
@@ -30,7 +42,7 @@ The home page is working fully responsively and has the same background like the
 A page where the user can see how the quiz is planned out.
 ![Rules page](assets/readme-images/rules-page.JPG)
 ### Quiz page
-When the quiz starts the timer begins and they have 15 seconds to chose their answer. When an answer is selected the quiz give the user instant feedback if it was the correct or incorrect answer by the colors green for correct and red for incorrect. The user can also see in the bottom corner how many questions they have left. The next button dont show up until the user have chosen their answer to prevent cheating.
+When the user clicked continue the quiz starts with a timer, they have 15 seconds to chose their answer. When an answer is selected the quiz give the user instant feedback if it was the correct or incorrect answer by the colors green for correct and red for incorrect. The user can also see in the bottom corner how many questions they have left. The next button dont show up until the user have chosen their answer to prevent cheating.
 ![Quiz page](assets/readme-images/quiz-page.JPG)
 ![Quiz correct/incorrect page](assets/readme-images/quiz-correct.JPG)
 ### Feedback page
@@ -58,7 +70,10 @@ I used Google Chromes lighthouse to be sure of the accessiblity. All of the page
 ![Websites performance, accessibility and more](assets/readme-images/lighthouse.JPG)
 ## Unfixed bugs
 # Fixed bugs
+![Fixed bug](assets/readme-images/bug.JPG)
+After the time went down to 0 it started to count negative numbers. I fixed this by making an if statement in JavaScript. So now when the timer counts down it stops at 0. 
 ## Deployment
+
 ## Credits
 ### Content
 ### Media
