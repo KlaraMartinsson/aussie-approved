@@ -50,6 +50,12 @@ No warning in JSHint validatore.
 ### Am I responsive
 I looked at this [website](https://ui.dev/amiresponsive?url=https://8000-klaramartinsson-aussie-a-rpeqpg0a1z.us2.codeanyapp.com/index.html) when I was making media queries to make sure the webpage looked good on all screens.
 ### Accessibility
+I used Google Chromes lighthouse to be sure of the accessiblity. All of the pages have a good accessibility score. More things I done for the acessibility are:
+- My text colors have good contrast to the backgrounds
+- Using semantic HTML
+- A good overall contrast with my colors
+- No disturbing background images or fonts that makes text hard to read.
+![Websites performance, accessibility and more](assets/readme-images/lighthouse.JPG)
 ## Unfixed bugs
 # Fixed bugs
 ## Deployment
