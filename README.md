@@ -38,8 +38,13 @@ When all of the questions are answered the user comes to the feedback page where
 - The websites pictures are not pixeled or stretch out on any pages.
 ### Code validation
 #### HTML
+No errors where found in the code with the W3C Validator.
 #### CSS
+The code made it through Jigsaws validatore with no problems.
+#### JavaScript
+No warning in JSHint validatore.
 ### Am I responsive
+I looked at this [website](https://ui.dev/amiresponsive?url=https://8000-klaramartinsson-aussie-a-rpeqpg0a1z.us2.codeanyapp.com/index.html) when I was making media queries to make sure the webpage looked good on all screens.
 ### Accessibility
 ## Unfixed bugs
 # Fixed bugs
@@ -47,4 +52,5 @@ When all of the questions are answered the user comes to the feedback page where
 ## Credits
 ### Content
 ### Media
+I made the background image myself in Photoshop with the australian flag that I took from [Pixabays website](https://pixabay.com/) I also took my icon for the browser tab from Pixabay.
 ## Acknowledgementes
