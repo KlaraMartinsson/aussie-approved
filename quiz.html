@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-        <link rel=" shorcut icon" type="x-icon" href="assets/images/icon.png">
+    <link rel="shorcut icon" href="assets/images/icon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A funny quiz for backpackers to learn Australian slang"/>
@@ -19,7 +19,8 @@
           >1. Once you select your answer, you can't choose another.</span
         >
         <span class="rules"
-          >2. You will be able to see if you selected the correct answer while you play.</span
+          >2. You will be able to see if you selected the correct answer while
+          you play.</span
         >
         <span class="rules"
           >3. You will have <span style="color: blue">15 seconds</span> per
@@ -28,9 +29,8 @@
         <span class="rules"
           >4. You can't exit from the Quiz while you're playing.</span
         >
-
         <div class="btn-group">
-          <a href="index.html">
+          <a href="index.html" aria-label="Exit Quiz and go to home page">
             <button class="buttons" id="exit-btn">Exit Quiz</button>
           </a>
           <button class="buttons" id="continue-btn">Continue</button>
@@ -43,7 +43,7 @@
       <div class="quiz-box hide">
         <header>
           <h2>Aussie Approved Quiz</h2>
-        <div id="countdown-timer" class="hide">Time left: 15</div>
+          <div id="countdown-timer" class="hide">Time left: 15</div>
         </header>
         <div class="quiz">
           <h3 id="question-title">Questions about Australian slang</h3>
@@ -57,14 +57,7 @@
           <button id="next-btn" class="hide next-btn answer-btn">Next</button>
           <!--Quiz box footer-->
           <footer>
-            <div class="counter hide">
-              <span
-                ><p>1</p>
-                <p>/</p>
-                <p>15</p>
-                Questions</span
-              >
-            </div>
+            <div class="counter hide">1/10</div>
           </footer>
         </div>
       </div>
@@ -79,7 +72,7 @@
         <h3 class="score-text">Well done, you finished the quiz!</h3>
         <div class="score"></div>
         <div class="btn-group">
-          <a href="index.html">
+          <a href="index.html" aria-label="Exit Quiz and go to home page">
             <button class="buttons">Exit Quiz</button>
           </a>
         </div>
