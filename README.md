@@ -100,6 +100,13 @@ Once the user run out of questions the game doesn't end. So I added the showFeed
 When you click on a option in the quiz the score goes up or down, making it easier to cheat. 
 
 ## Deployment
+Git hub pages was used to deploy the live site as following:
+- Log in to Git hub.
+- Go to the GitHub repository [Aussie Approved](https://github.com/KlaraMartinsson/aussie-approved), navigate to settings.
+- In the left-hand side navigation bar click pages.
+- In the source section chose Main and select Root from the folder selection dropdown menu.
+- Click on save and you then get the URL.
+- All codes, files and images have been added in Github by using Git commands: git add ., git commit -m and git push.
 
 ## Credits
 ### Content
@@ -109,7 +116,7 @@ When you click on a option in the quiz the score goes up or down, making it easi
 I made the background image myself in Photoshop with the australian flag that I took from [Pixabays website](https://pixabay.com/) I also took my icon for the browser tab from Pixabay. I used [Font Awesome](https://fontawesome.com/) for the feedback icon with the trophie.
 
 ### Code used
-I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone for the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about making a timer and counting questions in the quiz.
+I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone of the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about making a timer and counting questions in the quiz.
 
 ## Acknowledgementes
 - My family and friends for checking out the webpage on their screens and giving critic.
