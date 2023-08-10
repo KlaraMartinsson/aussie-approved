@@ -3,6 +3,10 @@
 Aussie Approved is a website that want to reach out to people that want to backpack Australia. In this website they will learn the Australian slang, so they are ready to fit in and get approved by the aussies!
 ![Website in diffrent screens](assets/readme-images/responsive.JPG)
 ## Design
+### Wireframes
+I made wireframes to get an idea of how I wanted my website to turn out and to see how it would work out with responsivness. I changed the look of it to make it look more like you are on the same webpage when the quiz begins. 
+![Wireframe for home page](assets/readme-images/wireframes.JPG)
+![Wireframe for quiz](assets/readme-images/questions-wireframe.JPG)
 ### Color theme
 I wanted the website to have the same theme through the whole process to make it more user friendly. I did that by having the same colors and background image in every step. I focused on having colors with good contrast for readability, for example blue and red. I also match the colors with the Australian flag to keep the theme of Australia. I used the colors black and white to have a nice structured layout.
 ![Color palette for the website](assets/readme-images/colors.JPG)
