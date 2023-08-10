@@ -2,6 +2,8 @@
 
 const continueBtn = document.getElementById('continue-btn');
 const nextBtn = document.getElementById('next-btn');
+const exitBtn = document.getElementById('exit-btn');
+const startBtn = document.getElementById('start-btn');
 const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
@@ -37,6 +39,10 @@ nextBtn.addEventListener('click', () => {
     giveRandomQuestion();
     showQuestionCounter(questionNum);
 });
+
+exitBtn.addEventListener('click', () => {
+        window.location.href = 'index.html';
+})
 
 // Hiding the rule box and showing question box, when clicking on continue button
 function startQuiz() {

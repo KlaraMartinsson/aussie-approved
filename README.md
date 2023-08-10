@@ -116,7 +116,7 @@ Git hub pages was used to deploy the live site as following:
 I made the background image myself in Photoshop with the australian flag that I took from [Pixabays website](https://pixabay.com/) I also took my icon for the browser tab from Pixabay. I used [Font Awesome](https://fontawesome.com/) for the feedback icon with the trophie.
 
 ### Code used
-I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone of the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about counting questions in the quiz. I got help with the timer from 
+I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone of the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about counting questions in the quiz. I got help with the timer from [Reach Star](https://www.youtube.com/watch?v=4piMZDO5IOI)
 The code snippet to create the shadows around the containers and buttons was learnt from this [CSS leason](https://www.w3schools.com/css/css3_shadows.asp).
 
 ## Acknowledgementes
