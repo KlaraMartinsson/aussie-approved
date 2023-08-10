@@ -1,25 +1,25 @@
 # Aussie Approved
-![View the live project here.](länk)
-Aussie Approved is a website that want to reach out to people that are planning to backpack Australia. In this website they will learn the Australian slang, so they are ready to fit in and get approved by the aussies!
-It has 20 questions and have 4 diffrent options. The website is responsive and fit large screens, medium screens, tablets and phones. In the end of the quiz there will be a feedback page that tells the user how much they scored, also a quit button to return back to the home page.
+Aussie Approved is a website with a quiz, that want to reach out to people that are planning to backpack Australia. In this website they will learn the Australian slang, so they are ready to fit in and get approved by the aussies!
+It has 15 questions and have 4 diffrent options. The website is responsive and fit large screens, medium screens, tablets and phones. In the end of the quiz there will be a feedback page that tells the user how much they scored, also a quit button to return back to the home page.
 ![Website in diffrent screens](assets/readme-images/responsive.JPG)
+![View the live project here.](länk)
 
 ## User Experience
 
 #### First user goals
 This quiz is for people that want to backpack Australia and fit in easily. They will have a better chance at that by learning the aussie slangs that I use in this quiz.
 - As a first time user, I want them to quickly understand what the webpage is about. 
-- It should be a easy quiz where the user dont get confused by disturbing design or pop ups.
-- The countent should be easily readable and with as litle grammatical mistakes as possible.
-- Smooth navigation through the quiz
+- It should be an easy quiz where the user dont get confused by disturbing design or pop ups.
+- The countent should be easy readable and with as litle grammatical mistakes as possible.
+- Smooth navigation through the quiz.
 
 #### Returning user goals
-- Coming back to the quiz becauce it was fun and they need to get a refresher.
+- Coming back to the quiz becauce they want a refresher.
 - Coming back to show their friends and family.
-- If I were to add high score and different levels of difficult the user could challenge themself and their friends and family.
+- If I were to add high score and different levels of difficulty the user could challenge themself and their friends and family.
 
 ### Wireframes
-I made wireframes to get an idea of how I wanted my website to turn out and to see how it would work out with responsivness for better user experience. I changed the look of it to make it look more like you are on the same webpage when the quiz begins.
+I made wireframes to get an idea of how I wanted my website to turn out. I also made it to see how it would act with responsivness for better user experience. I changed the look of it to make it look more like you are on the same webpage when the quiz begins.
 ![Wireframe for home page](assets/readme-images/wireframes.JPG)
 ![Wireframe for quiz](assets/readme-images/questions-wireframes.JPG)
 
@@ -46,7 +46,8 @@ Google fonts were used for the title in the home page. I choose 'Lisa Bosa' beca
 ### Future features
 - A page to store the users high score.
 - A option to share your score for social media.
-
+- Different levels of difficulty in the quiz.
+- 
 ### Home page
 The home page is working fully responsively and has the same background like the rest of the pages. It has a small concrete sub heading that is telling the user what the website/quiz is for and how they can use knowledge from it in real life. The home page also have a Start Quiz button that has a hover on it and a pointer to make it easier for the user to understand that its something to click on.
 ![Home page](assets/readme-images/home-page.JPG)
