@@ -102,6 +102,14 @@ Always when you click on the answers the score highers up or down, making it eas
 
 ## Credits
 ### Content
+- The content from the quiz is from [Australia day](https://www.australiaday.com.au/fun-activities/take-the-aussie-slang-quiz/), [Insiders guides](https://insiderguides.com.au/aussie-slang-test/) or by myself. I used [Font Awesome](<https://fontawesome.com/>) for the feedback icon with the trophie.
+
 ### Media
 I made the background image myself in Photoshop with the australian flag that I took from [Pixabays website](https://pixabay.com/) I also took my icon for the browser tab from Pixabay.
+
+### Code used
+I used this video like a tutorial for the basics in JavaScript [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k). I also used this video for knowledge about making a timer and counting questions in the quiz [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s).
+
 ## Acknowledgementes
+- My family and friends for checking out the webpage on their screens and giving critic.
+- My mentor Seun for giving helpful advise about the design.
