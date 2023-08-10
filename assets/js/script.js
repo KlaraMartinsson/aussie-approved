@@ -39,15 +39,16 @@ nextBtn.addEventListener('click', () => {
     showQuestionCounter(questionNum);
 });
 
+//If exit button is clicked goes to home page
 exitBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
-})
+    window.location.href = 'index.html';
+});
 
 // Hiding the rule box and showing question box, when clicking on continue button
 function startQuiz() {
     time = 15;
     rulesBox.classList.add('hide');
-    randomQuestions = questions.sort(() => Math.random() -0.5); //Randomise questions
+    randomQuestions = questions.sort(() => Math.random() - 0.5); //Randomise questions
     currentQuestionIndex = 0;
     quizBox.classList.remove('hide');
     counterQuestions.classList.remove('hide');
@@ -79,7 +80,7 @@ function showQuestion(question) {
 
 // Resets the old questions to make room for the new ones
 function resetQuestions() {
-    time = 15
+    time = 15;
     nextBtn.classList.add('hide');
     while (answerList.firstChild) {
         answerList.removeChild
@@ -142,7 +143,7 @@ function showQuestionCounter(index) {
 // Shows Feedback box
 function showFeedback() {
     time = 1000;
-    countdownTimer.classList.add("hide")
+    countdownTimer.classList.add("hide");
     quizBox.classList.add('hide'); // Hides the quiz box
     feedbackBox.classList.remove('hide'); // Shows the Feedback box
     scoreText.innerText = `Mate, you finished the quiz! You have scored ${scores}/15 points. Good luck on your new adventures in Australia!`;

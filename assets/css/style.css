@@ -38,25 +38,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* button to start the quiz*/
-#start-btn {
-    width: 190px;
-    height: 40px;
-    font-size: 18px;
-    background: #B90C0C;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-    font-weight: bold;
-    letter-spacing: 2px;
-    cursor: pointer;
-    color: white
-}
-
-#start-btn:hover {
-    background: #3066D2;
-    color: white;
-}
-
 /* Content for the rule box*/
 #rules-box {
     margin: 0 auto;
@@ -110,6 +91,36 @@ body {
     box-shadow: none;
 }
 
+.link-btn {
+    width: 190px;
+    height: 40px;
+    background: #B90C0C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+text-decoration: none;
+    text-align: center;
+}
+
+/* button to start the quiz*/
+/*
+#start-btn {
+    width: 190px;
+    height: 40px;
+    font-size: 18px;
+    background: #B90C0C;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: white
+}
+
+#start-btn:hover {
+    background: #3066D2;
+    color: white;
+}
+*/
 /* Content for the Quiz box*/
 
 .quiz-box {
