@@ -3,7 +3,6 @@
 const continueBtn = document.getElementById('continue-btn');
 const nextBtn = document.getElementById('next-btn');
 const exitBtn = document.getElementById('exit-btn');
-const startBtn = document.getElementById('start-btn');
 const rulesBox = document.getElementById('rules-box');
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 const feedbackBox = document.getElementsByClassName('feedback-box')[0];
