@@ -144,17 +144,20 @@ header {
 }
 
 /* Style and positioning for the timer in Quiz*/
-.countdown-timer {
+#countdown-timer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 120px;
-    height: 40px;
-    background: rgb(241, 241, 241);
+    width: 90px;
+    height: 30px;
+    background: #B90C0C;
+    color: white;
     border: 1px solid black;
     border-radius: 6px;
     padding: 0 8px;
     user-select: none;
+    text-align: center;
+    font-weight: 600;
 }
 
 .timer-text {
@@ -312,6 +315,7 @@ header {
         margin-top: 280px;
     }
 }
+
 /* For medium screens size from 820px to 1280px */
 @media (min-width: 820px) and (max-width: 1280px) {
     .home-content {
@@ -322,6 +326,7 @@ header {
         margin-top: 110px;
     }
 }
+
 /* For tablet screens size from 520px to 795px */
 @media (min-width: 560px) and (max-width:796px) {
     .home-content {
@@ -344,6 +349,7 @@ header {
         margin-top: 160px;
     }
 }
+
 /* For smaller tablet screen size from 560px and up*/
 @media (max-width:560px) {
     .home-title {
@@ -354,6 +360,7 @@ header {
         font-size: 20px;
     }
 }
+
 /* For extra small tablet screen size from 470px and up*/
 @media (max-width:470px) {
     #rules-box {
@@ -372,43 +379,29 @@ header {
         font-size: 12px;
     }
 
-    .timer {
-        width: 98px;
-        height: 33px;
-    }
+    /* Small devices (phones) from 320px to 420px) */
+    @media (min-width:320px) and (max-width:420px) {
+        #rules-box {
+            height: 410px;
+            margin-top: 60px;
+            width: 290px;
+        }
 
-    .timer-text {
-        font-size: 14px;
-    }
+        .quiz-box {
+            margin-top: 40px;
 
-    .timer-sec {
-        font-size: 14px;
-        height: 20px;
-        width: 25px;
-    }
-}
-/* Small devices (phones) from 320px to 420px) */
-@media (min-width:320px) and (max-width:420px) {
-    #rules-box {
-        height: 380px;
-        margin-top: 60px;
-        width: 290px;
-    }
+        }
 
-    .quiz-box {
-        margin-top: 40px;
+        .home-title {
+            color: white;
+            font-size: 30px;
+            /*text-shadow code from https: //www.w3schools.com/css/css3_shadows.asp*/
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            ;
+        }
 
-    }
-
-    .home-title {
-        color: white;
-        font-size: 30px;
-        /*text-shadow code from https: //stackoverflow.com/questions/13426875/text-border-using-css-border-around-text*/
-        text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-            1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-    }
-
-    #sub-heading {
-        color: white;
+        #sub-heading {
+            color: white;
+        }
     }
 }

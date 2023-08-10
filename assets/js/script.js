@@ -115,7 +115,7 @@ function clearStatusClass(element) {
 
 // Timer in the quiz 
 function showTimer() {
-    countdownTimer.innerHTML = `${time} Seconds left`;
+    countdownTimer.innerHTML = `Time left: ${time}`;
     time--;
     if (time < 0 && currentQuestionIndex < 14) {
         currentQuestionIndex++;
