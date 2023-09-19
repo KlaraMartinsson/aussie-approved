@@ -23,10 +23,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0px 0 0 0;
+    margin: 0 200px;
     font-family: 'Lisu Bosa', serif;
     text-align: center;
-    border: 3px solid #000000;
+    padding: 60px 20px 30px 20px;
+    border-radius: 10px;
+    background-color: rgb(223, 233, 255);
+    box-shadow: 0 0 10px #000000;
 }
 
 .home-title {
@@ -356,7 +359,7 @@ header {
     .home-content {
             margin-top: 350px;
         }
-        
+
     #rules-box {
         height: 350px;
     }
