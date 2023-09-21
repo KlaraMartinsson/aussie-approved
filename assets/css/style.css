@@ -98,7 +98,7 @@ body {
 .link-btn {
     width: 130px;
     height: 38px;
-    background: #3066D2;
+    background: #B90C0C;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     padding-top: 20px;
@@ -117,7 +117,6 @@ body {
 .link-btn:hover {
     background: #3066D2;
     color: white;
-    border: 1px solid #001aff;
 }
 
 .quiz-box {
@@ -270,7 +269,7 @@ header {
 /* For larger screens size from 1300px and up */
 @media (min-width:1300px) {
     .home-content {
-        margin-top: 350px;
+        margin-top: 340px;
     }
 
     .home-title {
@@ -282,9 +281,9 @@ header {
     }
 
     #rules-box {
-        margin-top: 320px;
+        margin-top: 270px;
         width: 900px;
-        height: 400px;
+        height: 420px;
     }
 
     h1 {
