@@ -98,7 +98,7 @@ body {
 .link-btn {
     width: 130px;
     height: 38px;
-    background: #B90C0C;
+    background: #3066D2;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     padding-top: 20px;
@@ -117,6 +117,7 @@ body {
 .link-btn:hover {
     background: #3066D2;
     color: white;
+    border: 1px solid #001aff;
 }
 
 .quiz-box {
