@@ -2,7 +2,7 @@
 Aussie Approved is a website with a quiz, that want to reach out to people that are planning to backpack Australia. In this website they will learn the Australian slang, so they are ready to fit in and get approved by the aussies!
 It has 15 questions and have 4 diffrent options. The website is responsive and fit large screens, medium screens, tablets and phones. In the end of the quiz there will be a feedback page that tells the user how much they scored, also a quit button to return back to the home page.
 ![Website in diffrent screens](assets/readme-images/responsive.JPG)
-![View the live project here.](länk)
+[View the live project here.](https://klaramartinsson.github.io/aussie-approved/)
 
 ## User Experience
 
