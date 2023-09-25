@@ -1,3 +1,4 @@
+
 //Getting all necessary elements
 
 const continueBtn = document.getElementById('continue-btn');
@@ -19,7 +20,7 @@ let time = 0;
 let timer = setInterval(showTimer, 1000);
 
 
-//Start quiz and counting questions when contiue button is clicked
+//Start quiz and counting questions when continue button is clicked
 continueBtn.addEventListener('click', () => {
     showQuestionCounter(1);
     startQuiz();
@@ -37,12 +38,12 @@ nextBtn.addEventListener('click', () => {
     showQuestionCounter(questionNum);
 });
 
-//If exit button is clicked goes to home page
+//If exit button is clicked user gets to home page
 exitBtn.addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
-// Hiding the rule box and showing question box, when clicking on continue button
+// Hides the rule box and shows the question box
 function startQuiz() {
     time = 15;
     rulesBox.classList.add('hide');
@@ -52,7 +53,7 @@ function startQuiz() {
     counterQuestions.classList.remove('hide');
     giveRandomQuestion();
     showTimer();
-    countdownTimer.classList.remove("hide");
+    countdownTimer.classList.remove('hide');
 }
 
 //Gives random questions in the quiz and resets
