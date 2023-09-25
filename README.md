@@ -66,9 +66,16 @@ When all of the questions are answered the user reach the feedback page where th
 ![Feedback page](assets/readme-images/feedback-page.JPG)
 
 ## Testing
-- The website have been tested with W3C Validator, Jigsaw Validator, Js Hint, The Am I Responsive website and Google Chrome lighthouse.
+### Manual testing
+- I been testing the website many times by playing the game. I also been asking friends and family to check it out.
+* Checking that all the buttons works
+* Make different choices in the quiz to see the colors for correct and incorrect answer.
+* Looking at the feedback at the end of the quiz to see if it counts correct answers. 
+* Checking that the timer works when quiz begins. Also see if new questions comes up when the timer is finished. 
+* Looked at the background of the website that it's not pixeled or stretch out on any pages. Also that it has good contrast with text elements.
+### Automated testing
+- The website have been tested with W3C Validator, Jigsaw Validator, Js Hint, The Am I Responsive website, Google Chrome lighthouse and for console errors.
 - All pages have been tested for screen sizes from 320px up to 1300px.
-- The websites pictures are not pixeled or stretch out on any pages.
 ### Code validation
 #### HTML
 No errors where found in the code with the W3C Validator.
