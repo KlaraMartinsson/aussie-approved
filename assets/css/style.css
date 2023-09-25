@@ -72,7 +72,7 @@ body {
 /* Positioning of the rules list*/
 .rules {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   margin: 6px;
 }
 
@@ -95,6 +95,7 @@ body {
   box-shadow: 0 0 2px #3066d2;
   cursor: pointer;
   color: black;
+  font-size: 17px;
 }
 
 .buttons:hover {
@@ -270,23 +271,23 @@ header {
 }
 
 #feedback-exit {
-    color: rgb(255, 255, 255);
-    border: 10px solid #003fbe;
-    font-weight: bold;
-    box-shadow: 0 0 8px black;
-    width: 97px;
-    border-radius: 7px;
-    padding: 8px;
-    margin: 5px auto 0;
-    cursor: pointer;
-    text-align: center;
-    background: #003fbe;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  border: 10px solid #003fbe;
+  font-weight: bold;
+  box-shadow: 0 0 8px black;
+  width: 97px;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 5px auto 0;
+  cursor: pointer;
+  text-align: center;
+  background: #003fbe;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #feedback-exit:hover{
-    box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px black;
 }
 
 /* Hides content when needed*/
@@ -295,24 +296,40 @@ header {
 }
 
 /* Media queries*/
-
-/* For medium screens size from 820px to 1300px */
 @media (max-width: 700px) {
-    .home-title {
-        font-size: 50px;
+  .home-title {
+    font-size: 50px;
     }
 
-    #sub-heading {
-        font-size: 25px;
+  #sub-heading {
+    font-size: 25px;
     }
-
 }
 
-@media (max-width: 710px) {
-    h2{
-        font-size: 19px;
+@media (max-width: 420px) {
+  .home-title {
+    font-size: 30px;
     }
 
-    h3 {
-        font-size: 20px;
+  #sub-heading {
+    font-size: 18px;
     }
+
+  .link-btn {
+    width: 100px;
+    height: 30px;
+    padding-top: 7px;
+    }
+
+  .link-btn a {
+    font-size: 13px;
+    }
+
+  h2 {
+    font-size: 15px;
+    }
+
+  h3 {
+    font-size: 16px;
+    }
+}
