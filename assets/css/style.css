@@ -216,7 +216,7 @@ header {
   color: black;
 }
 
-/*Next button*/
+/* Next button*/
 #next-btn {
   color: black;
   border: 1px solid black;
@@ -236,7 +236,7 @@ header {
   color: white;
 }
 
-/*Positioning of the countdown for the questions*/
+/* Positioning of the countdown for the questions*/
 .counter span {
   display: flex;
   text-align: left;
