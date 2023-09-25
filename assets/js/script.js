@@ -90,6 +90,7 @@ function resetQuestions() {
     }
 }
 
+// Checks if the answer that's been choosen is correct or incorrect
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
@@ -97,9 +98,9 @@ function selectAnswer(e) {
         setStatusClass(button, button.dataset.correct);
     });
     if (correct) {
-        scores += 1;
+        scores += 1; // Updates the score for every correct answer
     }
-    if (randomQuestions.length > currentQuestionIndex + 1) {
+    if (randomQuestions.length > currentQuestionIndex + 1) { // Checks if there is any more questions left
         nextBtn.classList.remove('hide'); //Shows next button when answer is selected
     } else {
         showFeedback();
