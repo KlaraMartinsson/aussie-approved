@@ -1,3 +1,7 @@
+/* I used a video from Web Dev Simplified (https://www.youtube.com/watch?v=riDzcEQbX6k) as a tutorial for the backbone of the JavaScript. 
+I also used a video from Coding Nepal (https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about counting 
+questions in the quiz and how to make the timer.
+*/
 
 // Getting all necessary elements
 const continueBtn = document.getElementById('continue-btn');
@@ -117,7 +121,9 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 }
 
-// Timer in the quiz 
+/* Timer in the quiz. 
+Inspiration from https://www.youtube.com/watch?v=WUBhpSRS_fk to make the timer.
+*/
 function showTimer() {
     countdownTimer.innerHTML = `Time left: ${time}`;
     time--;
@@ -131,7 +137,9 @@ function showTimer() {
         showFeedback();
 }
 
-// Checks the question counter in the footer of the quiz
+/* Checks the question counter in the footer of the quiz.
+Inspiration from https://www.youtube.com/watch?v=WUBhpSRS_fk to count the questions.
+*/
 function showQuestionCounter(index) {
     const questionCounter = document.getElementsByClassName('counter')[0];
     let counter = '<span><p>' + index + '</p>/<p>' + questions.length + '</p>Questions</span>'; 

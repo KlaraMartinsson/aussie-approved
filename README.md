@@ -162,8 +162,7 @@ I made the background image myself in Photoshop with the australian flag that I 
 
 ### Code used
 
-I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone of the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about counting questions in the quiz. I got help with the timer from [Reach Star](https://www.youtube.com/watch?v=4piMZDO5IOI)
-The code snippet to create the shadows around the containers and buttons was learnt from this [CSS leason](https://www.w3schools.com/css/css3_shadows.asp).
+I used a video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) as tutorial for the backbone of the JavaScript. I also used a video from [Coding Nepal](https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s) for knowledge about counting questions in the quiz and how to make the timer. The code snippet to create the shadows around the containers and buttons was learnt from this [CSS leason](https://www.w3schools.com/css/css3_shadows.asp).
 
 ## Acknowledgementes
 
