@@ -262,10 +262,10 @@ header {
 
 #feedback-exit {
     color: rgb(255, 255, 255);
-    border: 2px solid #003fbe;
-    box-shadow: 0 0 2px black;
-    font-size: 15px;
-    width: 150px;
+    border: 10px solid #003fbe;
+    font-weight: bold;
+    box-shadow: 0 0 8px black;
+    width: 97px;
     border-radius: 7px;
     padding: 8px;
     margin: 5px auto 0;
@@ -277,7 +277,7 @@ header {
 }
 
 #feedback-exit:hover{
-    box-shadow: 0 0 4px black;
+    box-shadow: 0 0 15px black;
 }
 
 /* Hides content when needed*/
